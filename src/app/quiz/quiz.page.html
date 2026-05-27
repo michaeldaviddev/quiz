@@ -1,0 +1,131 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goHome()">
+        <ion-icon slot="icon-only" name="arrowBack"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Quiz</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ng-container *ngIf="loading">
+    <div class="centered">
+      <p>Cargando preguntas...</p>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!loading && showResults && results">
+    <div class="results-container">
+      <ion-card class="results-card">
+        <ion-card-content>
+          <h1 class="results-title">Resultados</h1>
+          <div class="overall-score">
+            <span class="score-value">{{ results.overall.percentage }}%</span>
+            <span class="score-label">
+              {{ results.overall.correct }} / {{ results.overall.total }} correctas
+            </span>
+          </div>
+
+          <ion-progress-bar
+            [value]="results.overall.correct / results.overall.total"
+            color="success"
+          ></ion-progress-bar>
+
+          <h2 class="domain-title">Por dominio</h2>
+          <div class="domain-list">
+            <div *ngFor="let domain of results.domains" class="domain-item">
+              <div class="domain-header">
+                <span class="domain-name">{{ domain.domain }}</span>
+                <span class="domain-score">
+                  {{ domain.correct }} / {{ domain.total }}
+                </span>
+              </div>
+              <ion-progress-bar
+                [value]="domain.total > 0 ? domain.correct / domain.total : 0"
+                color="tertiary"
+              ></ion-progress-bar>
+            </div>
+          </div>
+
+          <div class="actions">
+            <ion-button expand="block" (click)="restart()">
+              <ion-icon slot="start" name="refresh"></ion-icon>
+              Reintentar
+            </ion-button>
+            <ion-button expand="block" fill="outline" (click)="goHome()">
+              <ion-icon slot="start" name="home"></ion-icon>
+              Inicio
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!loading && !showResults && question">
+    <div class="quiz-container">
+      <div class="progress-header">
+        <span>Pregunta {{ currentIndex + 1 }} / {{ totalQuestions }}</span>
+        <span class="progress-pct">
+          {{ totalQuestions > 0 ? (currentIndex / totalQuestions * 100 | number:'1.0-0') : 0 }}%
+        </span>
+      </div>
+      <ion-progress-bar
+        [value]="totalQuestions > 0 ? currentIndex / totalQuestions : 0"
+        color="primary"
+      ></ion-progress-bar>
+
+      <ion-card class="question-card">
+        <ion-card-content>
+          <div class="domain-badge">{{ question.domain }}</div>
+          <p class="question-text">{{ question.question }}</p>
+        </ion-card-content>
+      </ion-card>
+
+      <div class="options-list">
+        <ion-card
+          *ngFor="let option of question.options"
+          class="option-card"
+          [class.selected]="selectedOption === option.id"
+          [class.correct-answer]="isAnswered && option.id === question.correct_answer"
+          [class.wrong-answer]="isAnswered && selectedOption === option.id && !isCorrect"
+          (click)="selectOption(option.id)"
+        >
+          <ion-card-content>
+            <span class="option-id">{{ option.id }}</span>
+            <span class="option-text">{{ option.text }}</span>
+            <ion-icon
+              *ngIf="isAnswered && option.id === question.correct_answer"
+              name="checkmark-circle"
+              class="result-icon correct-icon"
+            ></ion-icon>
+            <ion-icon
+              *ngIf="isAnswered && selectedOption === option.id && !isCorrect"
+              name="close-circle"
+              class="result-icon wrong-icon"
+            ></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div *ngIf="isAnswered" class="feedback">
+        <div class="feedback-header" [class.correct]="isCorrect" [class.incorrect]="!isCorrect">
+          <ion-icon [name]="isCorrect ? 'checkmark-circle' : 'close-circle'"></ion-icon>
+          <span>{{ isCorrect ? 'Correcto' : 'Incorrecto' }}</span>
+        </div>
+        <p class="explanation">{{ explanation }}</p>
+        <ion-button expand="block" (click)="next()">
+          {{ currentIndex + 1 < totalQuestions ? 'Siguiente' : 'Ver resultados' }}
+        </ion-button>
+      </div>
+    </div>
+  </ng-container>
+</ion-content>
