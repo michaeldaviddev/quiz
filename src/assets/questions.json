@@ -1,1302 +1,652 @@
 [
   {
     "question_number": 1,
-    "question": "A company wants to analyze its AWS spending trends over the past six months. Which tool should they use?",
+    "question": "Which cloud characteristic means billing is based on actual usage?",
     "options": [
-      { "id": "A", "text": "AWS Budgets" },
-      { "id": "B", "text": "AWS Cost & Usage Report" },
-      { "id": "C", "text": "AWS Trusted Advisor" },
-      { "id": "D", "text": "AWS Cost Explorer" }
+      { "id": "A", "text": "Broad network access" },
+      { "id": "B", "text": "Resource pooling" },
+      { "id": "C", "text": "Measured service" },
+      { "id": "D", "text": "Elasticity" }
     ],
     "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "D",
-    "explanation": "AWS Cost Explorer is designed for visualizing and analyzing usage patterns and cost trends over time."
+    "correct_answer": "C",
+    "explanation": "Cloud resources are metered, and billing is based on consumption."
   },
   {
     "question_number": 2,
-    "question": "Which AWS service allows you to store and retrieve objects with 11 nines of durability and multiple storage classes?",
+    "question": "Which deployment model combines on-premises and Azure resources?",
     "options": [
-      { "id": "A", "text": "Amazon EFS" },
-      { "id": "B", "text": "Amazon S3" },
-      { "id": "C", "text": "Amazon EBS" },
-      { "id": "D", "text": "AWS Storage Gateway" }
+      { "id": "A", "text": "Public Cloud" },
+      { "id": "B", "text": "Private Cloud" },
+      { "id": "C", "text": "Hybrid Cloud" },
+      { "id": "D", "text": "Community Cloud" }
     ],
     "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "S3 provides object storage with 99.999999999% durability and supports multiple storage classes like Standard, IA, and Glacier."
+    "correct_answer": "C",
+    "explanation": "Hybrid blends on-premises infrastructure with Azure resources."
   },
   {
     "question_number": 3,
-    "question": "What AWS feature allows you to automatically scale EC2 instances based on traffic demand?",
+    "question": "In which service model does Azure manage the OS and runtime?",
     "options": [
-      { "id": "A", "text": "EC2 Reserved Instances" },
-      { "id": "B", "text": "Elastic Load Balancer" },
-      { "id": "C", "text": "AWS Auto Scaling" },
-      { "id": "D", "text": "EC2 Spot Instances" }
+      { "id": "A", "text": "IaaS" },
+      { "id": "B", "text": "PaaS" },
+      { "id": "C", "text": "SaaS" },
+      { "id": "D", "text": "DaaS" }
     ],
     "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "C",
-    "explanation": "AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost."
+    "correct_answer": "B",
+    "explanation": "In PaaS, Azure manages OS and runtime; the customer focuses on the app and data."
   },
   {
     "question_number": 4,
-    "question": "Who is responsible for setting up firewall rules to control traffic to EC2 instances?",
+    "question": "Moving from buying servers to pay-as-you-go billing best illustrates:",
     "options": [
-      { "id": "A", "text": "AWS" },
-      { "id": "B", "text": "IAM Roles" },
-      { "id": "C", "text": "The Customer" },
-      { "id": "D", "text": "AWS Support" }
+      { "id": "A", "text": "Capital Expenditure (CapEx)" },
+      { "id": "B", "text": "Operational Expenditure (OpEx)" },
+      { "id": "C", "text": "Elasticity" },
+      { "id": "D", "text": "SLA" }
     ],
     "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "C",
-    "explanation": "Under the AWS Shared Responsibility Model, the customer is responsible for configuring Security Groups and Network ACLs (firewalls) to secure their data and EC2 instances."
+    "correct_answer": "B",
+    "explanation": "Pay-as-you-go billing is an OpEx model, unlike CapEx (hardware purchase)."
   },
   {
     "question_number": 5,
-    "question": "A user needs to run code in response to an S3 file upload but does not want to manage any servers. Which service should they use?",
+    "question": "In SaaS, who is responsible for data classification and access?",
     "options": [
-      { "id": "A", "text": "Amazon EC2" },
-      { "id": "B", "text": "AWS Lambda" },
-      { "id": "C", "text": "Amazon ECS" },
-      { "id": "D", "text": "AWS Batch" }
+      { "id": "A", "text": "Microsoft" },
+      { "id": "B", "text": "The customer" },
+      { "id": "C", "text": "A shared third party" },
+      { "id": "D", "text": "No one" }
     ],
     "domain": "Domain 1: Cloud Concepts",
     "correct_answer": "B",
-    "explanation": "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, and it can be triggered automatically by other AWS services like Amazon S3."
+    "explanation": "Even in SaaS, customers own and classify their data."
   },
   {
     "question_number": 6,
-    "question": "Which AWS service enables secure VPN connectivity between your on-premises network and AWS?",
+    "question": "Best option to host a web app without managing OS patches:",
     "options": [
-      { "id": "A", "text": "VPC Peering" },
-      { "id": "B", "text": "NAT Gateway" },
-      { "id": "C", "text": "Direct Connect" },
-      { "id": "D", "text": "Site-to-Site VPN" }
+      { "id": "A", "text": "Virtual Machines" },
+      { "id": "B", "text": "App Service" },
+      { "id": "C", "text": "AKS" },
+      { "id": "D", "text": "Container Instances" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "D",
-    "explanation": "Site-to-Site VPN creates an encrypted IPsec connection between an on-premises network and an AWS VPC over the public internet."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "App Service is a PaaS platform for hosting apps without managing OS updates."
   },
   {
     "question_number": 7,
-    "question": "Which of the following best describes the AWS Free Tier?",
+    "question": "Private, dedicated connectivity with predictable latency to Azure:",
     "options": [
-      { "id": "A", "text": "Unlimited use of any AWS service for free." },
-      { "id": "B", "text": "12-month trial with access to certain free services up to specific limits." },
-      { "id": "C", "text": "A discount applied only to government accounts." },
-      { "id": "D", "text": "Free access to AWS Support Engineers 24/7." }
+      { "id": "A", "text": "VPN Gateway" },
+      { "id": "B", "text": "ExpressRoute" },
+      { "id": "C", "text": "Traffic Manager" },
+      { "id": "D", "text": "Front Door" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "The AWS Free Tier includes 12 months of free access to specific services (within tier limits) after initial sign-up, plus many always-free options."
+    "explanation": "ExpressRoute offers private, dedicated connections with predictable latency."
   },
   {
     "question_number": 8,
-    "question": "Which AWS security tool provides managed DDoS protection for applications?",
+    "question": "To survive a datacenter failure inside a region, deploy across:",
     "options": [
-      { "id": "A", "text": "AWS WAF" },
-      { "id": "B", "text": "AWS Shield" },
-      { "id": "C", "text": "Amazon GuardDuty" },
-      { "id": "D", "text": "AWS Inspector" }
+      { "id": "A", "text": "Availability Sets" },
+      { "id": "B", "text": "Resource Groups" },
+      { "id": "C", "text": "Availability Zones" },
+      { "id": "D", "text": "Region pairs" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "C",
+    "explanation": "AZs are independent datacenters within a region; they ensure resilience."
   },
   {
     "question_number": 9,
-    "question": "What is the primary purpose of AWS Identity and Access Management (IAM)?",
+    "question": "Make a Storage account reachable via a private IP inside a VNet:",
     "options": [
-      { "id": "A", "text": "To encrypt static data in Amazon S3 buckets." },
-      { "id": "B", "text": "To securely control authentication and authorization for AWS resources." },
-      { "id": "C", "text": "To monitor network traffic logs across VPCs." },
-      { "id": "D", "text": "To manage billing cycles for multiple AWS accounts." }
+      { "id": "A", "text": "Service Endpoint" },
+      { "id": "B", "text": "Private Endpoint" },
+      { "id": "C", "text": "NAT Gateway" },
+      { "id": "D", "text": "Public IP" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "IAM enables you to securely manage access to AWS services and resources by creating users, groups, and roles, and applying granular permissions."
+    "explanation": "Maps a private IP in your VNet to the storage account for secure access."
   },
   {
     "question_number": 10,
-    "question": "Which AWS architectural principle emphasizes breaking large applications into smaller, independent components?",
+    "question": "Run a single container quickly without managing servers or clusters:",
     "options": [
-      { "id": "A", "text": "Monolithic Architecture" },
-      { "id": "B", "text": "Tight Coupling" },
-      { "id": "C", "text": "Loose Coupling (Microservices)" },
-      { "id": "D", "text": "Over-provisioning" }
+      { "id": "A", "text": "AKS" },
+      { "id": "B", "text": "App Service" },
+      { "id": "C", "text": "Container Instances" },
+      { "id": "D", "text": "VM Scale Sets" }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "C",
-    "explanation": "Loose coupling reduces interdependencies between components, making the system more resilient, flexible, and easier to scale independently."
+    "explanation": "Azure Container Instances run containers serverlessly, without clusters."
   },
   {
     "question_number": 11,
-    "question": "Which service should a developer use to host a relational database with automated patching and backups?",
+    "question": "Which service provides Layer 7 load balancing and a Web Application Firewall (WAF)?",
     "options": [
-      { "id": "A", "text": "Amazon DynamoDB" },
-      { "id": "B", "text": "Amazon RDS" },
-      { "id": "C", "text": "Amazon Redshift" },
-      { "id": "D", "text": "Amazon ElastiCache" }
+      { "id": "A", "text": "Load Balancer" },
+      { "id": "B", "text": "Application Gateway" },
+      { "id": "C", "text": "Traffic Manager" },
+      { "id": "D", "text": "Azure Front Door" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "Amazon RDS (Relational Database Service) automates time-consuming administration tasks like hardware provisioning, database setup, patching, and backups."
+    "explanation": "Application Gateway offers Layer 7 HTTP load balancing and WAF for app protection."
   },
   {
     "question_number": 12,
-    "question": "What is the main advantage of deploying an application across multiple Availability Zones (AZs)?",
+    "question": "Which option provides low-latency private connectivity between two VNets?",
     "options": [
-      { "id": "A", "text": "Reduced data storage costs." },
-      { "id": "B", "text": "High availability and fault tolerance." },
-      { "id": "C", "text": "Guaranteed low latency globally." },
-      { "id": "D", "text": "Automatic data encryption." }
+      { "id": "A", "text": "VNet Peering" },
+      { "id": "B", "text": "VPN Gateway" },
+      { "id": "C", "text": "ExpressRoute" },
+      { "id": "D", "text": "NAT Gateway" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Deploying across multiple AZs ensures that if one data center zone experiences an outage, the application remains online via other isolated zones."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "A",
+    "explanation": "VNet Peering provides low-latency, high-bandwidth private connectivity between VNets."
   },
   {
     "question_number": 13,
-    "question": "A business wants to cache web content closer to users globally to reduce latency. Which AWS service provides this?",
+    "question": "Which service hosts public DNS zones for domains in Azure?",
     "options": [
-      { "id": "A", "text": "AWS Direct Connect" },
-      { "id": "B", "text": "Amazon CloudFront" },
-      { "id": "C", "text": "Amazon Route 53" },
-      { "id": "D", "text": "AWS Transit Gateway" }
+      { "id": "A", "text": "Private DNS" },
+      { "id": "B", "text": "Azure DNS" },
+      { "id": "C", "text": "DNS Forwarder" },
+      { "id": "D", "text": "Azure Firewall" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "Amazon CloudFront is a fast Content Delivery Network (CDN) service that securely delivers data, videos, and applications to users globally with low latency via Edge Locations."
+    "explanation": "Azure DNS hosts and manages public DNS zones for your domains."
   },
   {
     "question_number": 14,
-    "question": "Which storage service is best suited for high-performance, block-level storage attached directly to an EC2 instance?",
+    "question": "Which Blob Storage tier is the cheapest option for rarely accessed data, with hours needed for retrieval?",
     "options": [
-      { "id": "A", "text": "Amazon S3" },
-      { "id": "B", "text": "Amazon EFS" },
-      { "id": "C", "text": "Amazon EBS" },
-      { "id": "D", "text": "AWS Glacier" }
+      { "id": "A", "text": "Hot" },
+      { "id": "B", "text": "Cool" },
+      { "id": "C", "text": "Archive" },
+      { "id": "D", "text": "Premium" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "C",
-    "explanation": "Amazon Elastic Block Store (EBS) provides persistent, high-performance block storage volumes designed for use with Amazon EC2 instances."
+    "explanation": "Archive tier is the cheapest storage, but retrieval takes hours."
   },
   {
     "question_number": 15,
-    "question": "What does the term 'Elasticity' mean in AWS cloud computing?",
+    "question": "Which globally distributed NoSQL database supports multiple APIs?",
     "options": [
-      { "id": "A", "text": "The ability to run any operating system without licensing costs." },
-      { "id": "B", "text": "The ability to dynamically scale computing resources up or down based on real-time demand." },
-      { "id": "C", "text": "The capability to support relational and non-relational databases simultaneously." },
-      { "id": "D", "text": "The physical flexibility of server racks in AWS data centers." }
+      { "id": "A", "text": "Azure SQL Database" },
+      { "id": "B", "text": "Azure Table Storage" },
+      { "id": "C", "text": "Cosmos DB" },
+      { "id": "D", "text": "SQL Managed Instance" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Elasticity allows an infrastructure to match resource supply with demand automatically, minimizing costs and maintaining performance under fluctuating workloads."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "C",
+    "explanation": "Cosmos DB is a globally distributed, multi-API NoSQL database."
   },
   {
     "question_number": 16,
-    "question": "Which tool can an infrastructure team use to model and provision AWS resources using code (Infrastructure as Code)?",
+    "question": "Which governance feature enforces rules like \"resources must be deployed in approved regions\"?",
     "options": [
-      { "id": "A", "text": "AWS Systems Manager" },
-      { "id": "B", "text": "AWS CloudFormation" },
-      { "id": "C", "text": "AWS Config" },
-      { "id": "D", "text": "AWS OpsWorks" }
+      { "id": "A", "text": "Resource Locks" },
+      { "id": "B", "text": "Azure Policy" },
+      { "id": "C", "text": "Azure Monitor" },
+      { "id": "D", "text": "Azure Advisor" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 3: Azure Management and Governance",
     "correct_answer": "B",
-    "explanation": "AWS CloudFormation allows you to model, provision, and manage a collection of AWS and third-party resources safely and predictably using declarative text files."
+    "explanation": "Policies enforce compliance and restrict deployments to meet governance requirements."
   },
   {
     "question_number": 17,
-    "question": "What is the primary function of Amazon Route 53?",
+    "question": "Which method prevents accidental deletion of critical Azure resources?",
     "options": [
-      { "id": "A", "text": "A highly available and scalable Domain Name System (DNS) web service." },
-      { "id": "B", "text": "An automated security patching tool for Linux servers." },
-      { "id": "C", "text": "A managed file transfer gateway." },
-      { "id": "D", "text": "A hardware routing appliance for physical networks." }
+      { "id": "A", "text": "ReadOnly lock" },
+      { "id": "B", "text": "CanNotDelete lock" },
+      { "id": "C", "text": "RBAC Reader role" },
+      { "id": "D", "text": "Conditional Access" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "A",
-    "explanation": "Amazon Route 53 routes user requests to internet applications by translating human-readable names (like example.com) into numeric IP addresses."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "CanNotDelete prevents deletion while still allowing read/write."
   },
   {
     "question_number": 18,
-    "question": "Which service is a fully managed, serverless NoSQL database service known for single-digit millisecond latency?",
+    "question": "Where can you find personalized alerts for outages or planned maintenance affecting your resources?",
     "options": [
-      { "id": "A", "text": "Amazon RDS" },
-      { "id": "B", "text": "Amazon Aurora" },
-      { "id": "C", "text": "Amazon DynamoDB" },
-      { "id": "D", "text": "Amazon Redshift" }
+      { "id": "A", "text": "Azure Status page" },
+      { "id": "B", "text": "Service Health" },
+      { "id": "C", "text": "Azure Monitor" },
+      { "id": "D", "text": "Microsoft Sentinel" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale, fully managed and serverless."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Service Health provides resource-specific outage and maintenance alerts."
   },
   {
     "question_number": 19,
-    "question": "A user wants to monitor CPU utilization of their EC2 instances and set up alarms. Which service should they use?",
+    "question": "Which tool should you use to estimate future costs for planned Azure solutions?",
     "options": [
-      { "id": "A", "text": "AWS CloudTrail" },
-      { "id": "B", "text": "Amazon CloudWatch" },
-      { "id": "C", "text": "AWS Config" },
-      { "id": "D", "text": "Amazon Inspector" }
+      { "id": "A", "text": "TCO Calculator" },
+      { "id": "B", "text": "Pricing Calculator" },
+      { "id": "C", "text": "Cost Analysis" },
+      { "id": "D", "text": "Budgets" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 3: Azure Management and Governance",
     "correct_answer": "B",
-    "explanation": "Amazon CloudWatch provides monitoring and management services for AWS resources and applications, allowing users to collect metrics, track logs, and set alarms."
+    "explanation": "The Pricing Calculator estimates future Azure spend before deployment."
   },
   {
     "question_number": 20,
-    "question": "What type of AWS resource is an Amazon VPC?",
+    "question": "If you want to give a team permissions to only one resource group, which method should you use?",
     "options": [
-      { "id": "A", "text": "A compute service." },
-      { "id": "B", "text": "A storage service." },
-      { "id": "C", "text": "A logical, isolated virtual network." },
-      { "id": "D", "text": "A physical data center appliance." }
+      { "id": "A", "text": "Assign RBAC at subscription scope" },
+      { "id": "B", "text": "Assign RBAC at resource group scope" },
+      { "id": "C", "text": "Make them Owner at management group" },
+      { "id": "D", "text": "Create a new tenant" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "Amazon Virtual Private Cloud (VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network you define."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Applying RBAC at the resource group level limits permissions only to that scope."
   },
   {
     "question_number": 21,
-    "question": "Which of the following is a core design principle of the AWS Well-Architected Framework?",
+    "question": "Which of the following is an example of IaaS?",
     "options": [
-      { "id": "A", "text": "Guessing capacity needs to prevent shortages." },
-      { "id": "B", "text": "Testing systems at production scale through simulation." },
-      { "id": "C", "text": "Avoiding changes once a workload is operational." },
-      { "id": "D", "text": "Relying on physical security hardware over software controls." }
+      { "id": "A", "text": "Azure Virtual Machine" },
+      { "id": "B", "text": "App Service" },
+      { "id": "C", "text": "Microsoft 365" },
+      { "id": "D", "text": "Azure SQL Database" }
     ],
     "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Testing systems at production scale helps identify potential issues before deployment, which is a key recommendation of the Well-Architected Framework."
+    "correct_answer": "A",
+    "explanation": "VMs are IaaS, giving full OS control."
   },
   {
     "question_number": 22,
-    "question": "A start-up wants to minimize upfront capital investment. How does AWS help them achieve this?",
+    "question": "Using Azure together with another cloud provider is known as:",
     "options": [
-      { "id": "A", "text": "By offering free hardware upgrades every two years." },
-      { "id": "B", "text": "By replacing upfront infrastructure investments with low variable costs." },
-      { "id": "C", "text": "By requiring 5-year fixed contracts for all resources." },
-      { "id": "D", "text": "By providing unlimited lines of credit to new accounts." }
+      { "id": "A", "text": "Hybrid Cloud" },
+      { "id": "B", "text": "Multi-cloud" },
+      { "id": "C", "text": "Private Cloud" },
+      { "id": "D", "text": "Community Cloud" }
     ],
     "domain": "Domain 1: Cloud Concepts",
     "correct_answer": "B",
-    "explanation": "By shifting from CapEx (Capital Expenditure) to OpEx (Operational Expenditure), businesses pay only for what they use instead of buying data centers."
+    "explanation": "Multi-cloud means using multiple providers at once."
   },
   {
     "question_number": 23,
-    "question": "What does the term 'High Availability' imply in cloud computing?",
+    "question": "Elasticity primarily refers to:",
     "options": [
-      { "id": "A", "text": "The system runs at maximum processing speed at all times." },
-      { "id": "B", "text": "The system remains operational with minimal downtime despite component failures." },
-      { "id": "C", "text": "The data is automatically duplicated to every country globally." },
-      { "id": "D", "text": "The cost of the infrastructure is fixed regardless of usage." }
+      { "id": "A", "text": "Scaling up only" },
+      { "id": "B", "text": "Scaling down only" },
+      { "id": "C", "text": "Automatically scaling resources with demand" },
+      { "id": "D", "text": "Ensuring compliance in different regions" }
     ],
     "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "High Availability means a system is designed to be resilient and accessible over a long period, typically using redundancy across Availability Zones."
+    "correct_answer": "C",
+    "explanation": "Elasticity refers to scaling out and in as workload changes."
   },
   {
     "question_number": 24,
-    "question": "Which AWS global infrastructure component consists of one or more discrete data centers with redundant power, networking, and connectivity?",
+    "question": "SLA stands for and represents:",
     "options": [
-      { "id": "A", "text": "Edge Location" },
-      { "id": "B", "text": "Availability Zone" },
-      { "id": "C", "text": "AWS Region" },
-      { "id": "D", "text": "Local Zone" }
+      { "id": "A", "text": "Secure Logon Agreement" },
+      { "id": "B", "text": "Service-Level Agreement — uptime commitment" },
+      { "id": "C", "text": "Software Licensing Agreement" },
+      { "id": "D", "text": "Storage-Level Arrangement" }
     ],
     "domain": "Domain 1: Cloud Concepts",
     "correct_answer": "B",
-    "explanation": "An Availability Zone (AZ) is one or more data centers engineered to be isolated from failures in other AZs within the same Region."
+    "explanation": "An SLA is a financial uptime guarantee from Microsoft."
   },
   {
     "question_number": 25,
-    "question": "What is the primary benefit of 'Agility' in AWS cloud computing?",
+    "question": "In IaaS, who is responsible for patching the guest operating system?",
     "options": [
-      { "id": "A", "text": "The ability to transfer data between regions without latency." },
-      { "id": "B", "text": "Reduced time required to provision new IT resources from weeks to minutes." },
-      { "id": "C", "text": "Lowering costs by buying hardware in bulk quantities." },
-      { "id": "D", "text": "Enhanced encryption speeds for large databases." }
+      { "id": "A", "text": "Microsoft" },
+      { "id": "B", "text": "The customer" },
+      { "id": "C", "text": "No one" },
+      { "id": "D", "text": "The hardware vendor" }
     ],
     "domain": "Domain 1: Cloud Concepts",
     "correct_answer": "B",
-    "explanation": "Agility allows developers to experiment rapidly and deploy infrastructure in minutes, significantly accelerating innovation cycles."
+    "explanation": "In IaaS, Microsoft manages infrastructure, but customers patch the OS."
   },
   {
     "question_number": 26,
-    "question": "Under the AWS Shared Responsibility Model, which task is AWS's responsibility?",
+    "question": "Which storage redundancy option replicates data across availability zones in a region?",
     "options": [
-      { "id": "A", "text": "Configuring security groups on EC2 instances." },
-      { "id": "B", "text": "Managing operating system updates on guest virtual machines." },
-      { "id": "C", "text": "Maintaining physical security of the data center facilities." },
-      { "id": "D", "text": "Encrypting application data stored in databases." }
+      { "id": "A", "text": "LRS" },
+      { "id": "B", "text": "ZRS" },
+      { "id": "C", "text": "GRS" },
+      { "id": "D", "text": "RA-GRS" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "C",
-    "explanation": "AWS is responsible for 'Security of the Cloud,' which includes physical security of the infrastructure, virtualization software, and underlying networking."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Zone-Redundant Storage replicates across availability zones in one region."
   },
   {
     "question_number": 27,
-    "question": "Which IAM entity can be assumed by an EC2 instance to securely access services like Amazon S3 without embedded credentials?",
+    "question": "Best method to move 100 TB of data into Azure when internet is too slow:",
     "options": [
-      { "id": "A", "text": "IAM User" },
-      { "id": "B", "text": "IAM Group" },
-      { "id": "C", "text": "IAM Role" },
-      { "id": "D", "text": "IAM Policy" }
+      { "id": "A", "text": "AzCopy over weekend" },
+      { "id": "B", "text": "Azure Data Box" },
+      { "id": "C", "text": "SFTP to VM" },
+      { "id": "D", "text": "Storage Explorer" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "C",
-    "explanation": "An IAM Role is an identity with permission policies that determine what the identity can do, and it can be safely assumed by applications or AWS resources."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Data Box is a physical device for large-scale offline transfers."
   },
   {
     "question_number": 28,
-    "question": "Which service continuously monitors an AWS account for unauthorized behavior, malware, or compromised credentials?",
+    "question": "Which storage service provides SMB/NFS file shares mountable by Azure VMs and on-prem servers?",
     "options": [
-      { "id": "A", "text": "AWS Trusted Advisor" },
-      { "id": "B", "text": "Amazon Inspector" },
-      { "id": "C", "text": "Amazon GuardDuty" },
-      { "id": "D", "text": "AWS Config" }
+      { "id": "A", "text": "Blob Storage" },
+      { "id": "B", "text": "Azure Files" },
+      { "id": "C", "text": "Queue Storage" },
+      { "id": "D", "text": "Table Storage" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "C",
-    "explanation": "Amazon GuardDuty is a threat detection service that continuously monitors malicious activity and unauthorized behavior to protect AWS accounts."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Azure Files supports SMB and NFS shares, accessible from VMs and on-prem."
   },
   {
     "question_number": 29,
-    "question": "What is the best way to secure root user access to an AWS account?",
+    "question": "Which compute option is best for orchestrating many microservices with rolling updates?",
     "options": [
-      { "id": "A", "text": "Sharing the root credentials with team leads for emergency access." },
-      { "id": "B", "text": "Enabling Multi-Factor Authentication (MFA) and using a strong password." },
-      { "id": "C", "text": "Embedding root credentials into all script code files." },
-      { "id": "D", "text": "Disabling the root account entirely via AWS Support." }
+      { "id": "A", "text": "Azure Container Instances" },
+      { "id": "B", "text": "Azure Kubernetes Service (AKS)" },
+      { "id": "C", "text": "App Service" },
+      { "id": "D", "text": "VM Scale Sets" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "Enabling MFA adds an extra layer of defense on top of a strong password, protecting the highly privileged root account."
+    "explanation": "AKS manages container orchestration and rolling updates."
   },
   {
     "question_number": 30,
-    "question": "Which pillar of the AWS Well-Architected Framework focuses on running workloads effectively, gaining insight into operations, and continuously improving processes?",
+    "question": "Which service uses DNS-based global routing for apps across multiple regions?",
     "options": [
-      { "id": "A", "text": "Performance Efficiency" },
-      { "id": "B", "text": "Operational Excellence" },
-      { "id": "C", "text": "Reliability" },
-      { "id": "D", "text": "Cost Optimization" }
+      { "id": "A", "text": "Azure Front Door" },
+      { "id": "B", "text": "Traffic Manager" },
+      { "id": "C", "text": "Load Balancer" },
+      { "id": "D", "text": "Application Gateway" }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "The Operational Excellence pillar focuses on system health monitoring, operational health metrics, and continuous development/improvement patterns."
+    "explanation": "Traffic Manager routes traffic globally using DNS resolution methods."
   },
   {
     "question_number": 31,
-    "question": "What does 'Fault Tolerance' mean in cloud infrastructure?",
+    "question": "How can you organize multiple subscriptions into a hierarchy for applying policies and RBAC?",
     "options": [
-      { "id": "A", "text": "The ability of an application to withstand component failures without interrupting operations." },
-      { "id": "B", "text": "The mechanism used to calculate hardware failure fees." },
-      { "id": "C", "text": "The method used to report errors directly to AWS developers." },
-      { "id": "D", "text": "The total capacity limits enforced on an account." }
+      { "id": "A", "text": "Resource Groups" },
+      { "id": "B", "text": "Management Groups" },
+      { "id": "C", "text": "Tenants" },
+      { "id": "D", "text": "Blueprints" }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "A",
-    "explanation": "Fault tolerance is the property that enables a system to continue operating properly in the event of the failure of one or more of its components."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Management Groups allow grouping of multiple subscriptions for unified RBAC and policy assignment."
   },
   {
     "question_number": 32,
-    "question": "Which service acts as an automated security assessment tool that improves the security and compliance of applications deployed on EC2?",
+    "question": "Which service lets you package templates, RBAC roles, and policies together for repeatable deployments?",
     "options": [
-      { "id": "A", "text": "AWS Secrets Manager" },
-      { "id": "B", "text": "Amazon Inspector" },
-      { "id": "C", "text": "AWS Artifact" },
-      { "id": "D", "text": "Amazon Macie" }
+      { "id": "A", "text": "Azure Policy" },
+      { "id": "B", "text": "Azure Blueprints" },
+      { "id": "C", "text": "Azure Advisor" },
+      { "id": "D", "text": "Resource Locks" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 3: Azure Management and Governance",
     "correct_answer": "B",
-    "explanation": "Amazon Inspector automatically scans EC2 instances and container images for software vulnerabilities and unintended network exposure."
+    "explanation": "Blueprints combine templates, policies, and RBAC roles for consistent deployments."
   },
   {
     "question_number": 33,
-    "question": "Where can a user find and download AWS compliance reports, such as SOC 1, SOC 2, or PCI-DSS documentation?",
+    "question": "Which tool helps track and analyze past Azure spending?",
     "options": [
-      { "id": "A", "text": "AWS Trusted Advisor" },
-      { "id": "B", "text": "AWS Marketplace" },
-      { "id": "C", "text": "AWS Artifact" },
-      { "id": "D", "text": "AWS CloudTrail" }
+      { "id": "A", "text": "Budgets" },
+      { "id": "B", "text": "Cost Analysis" },
+      { "id": "C", "text": "Pricing Calculator" },
+      { "id": "D", "text": "TCO Calculator" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "C",
-    "explanation": "AWS Artifact is your go-to central resource for compliance-related information, providing on-demand access to AWS compliance reports."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Cost Analysis shows historical spending patterns in Azure."
   },
   {
     "question_number": 34,
-    "question": "Which AWS service uses Machine Learning to automatically discover, classify, and protect sensitive data like PII in Amazon S3?",
+    "question": "Which tool provides a browser-based shell with Azure CLI and PowerShell preinstalled?",
     "options": [
-      { "id": "A", "text": "Amazon GuardDuty" },
-      { "id": "B", "text": "Amazon Macie" },
-      { "id": "C", "text": "AWS KMS" },
-      { "id": "D", "text": "Amazon Comprehend" }
+      { "id": "A", "text": "Azure Portal" },
+      { "id": "B", "text": "Cloud Shell" },
+      { "id": "C", "text": "SSH to VM" },
+      { "id": "D", "text": "DevOps Agent" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 3: Azure Management and Governance",
     "correct_answer": "B",
-    "explanation": "Amazon Macie is a data security and data privacy service that uses machine learning and pattern matching to discover and protect sensitive data in AWS."
+    "explanation": "Cloud Shell is a browser-based shell with CLI and PowerShell preloaded."
   },
   {
     "question_number": 35,
-    "question": "What is the purpose of AWS CloudTrail?",
+    "question": "Which service provides a central log store and supports queries with KQL?",
     "options": [
-      { "id": "A", "text": "To monitor network throughput performance." },
-      { "id": "B", "text": "To log, continuously monitor, and retain account activity related to actions across your AWS infrastructure (API calls)." },
-      { "id": "C", "text": "To deploy code changes across development stacks." },
-      { "id": "D", "text": "To act as a stateful firewall for application traffic." }
+      { "id": "A", "text": "Application Insights" },
+      { "id": "B", "text": "Log Analytics Workspace" },
+      { "id": "C", "text": "Service Health" },
+      { "id": "D", "text": "Azure Status" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 3: Azure Management and Governance",
     "correct_answer": "B",
-    "explanation": "AWS CloudTrail enables governance, compliance, operational auditing, and risk auditing of your AWS account by logging API history."
+    "explanation": "Central log repository with query capabilities using KQL."
   },
   {
     "question_number": 36,
-    "question": "Which component allows an administrator to define granular user access permissions using JSON syntax code?",
+    "question": "Which service is used to securely store and manage secrets, keys, and certificates?",
     "options": [
-      { "id": "A", "text": "IAM Group" },
-      { "id": "B", "text": "IAM Policy" },
-      { "id": "C", "text": "IAM Role" },
-      { "id": "D", "text": "IAM User" }
+      { "id": "A", "text": "Key Vault" },
+      { "id": "B", "text": "Defender for Cloud" },
+      { "id": "C", "text": "Microsoft Sentinel" },
+      { "id": "D", "text": "Azure AD" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "An IAM Policy is a document that formalizes permissions using JSON formatting rules, which can then be attached to users, groups, or roles."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "A",
+    "explanation": "Key Vault is the secure storage for secrets, encryption keys, and certificates."
   },
   {
     "question_number": 37,
-    "question": "Which pricing model provides the deepest discount for EC2 instances but is subject to interruption if AWS needs capacity back?",
+    "question": "Which identity feature allows an app to connect to Azure resources without storing credentials?",
     "options": [
-      { "id": "A", "text": "On-Demand Instances" },
-      { "id": "B", "text": "Reserved Instances" },
-      { "id": "C", "text": "Savings Plans" },
-      { "id": "D", "text": "Spot Instances" }
+      { "id": "A", "text": "External ID" },
+      { "id": "B", "text": "Managed Identity" },
+      { "id": "C", "text": "Shared Key" },
+      { "id": "D", "text": "Service Principal only" }
     ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "D",
-    "explanation": "EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud at up to a 90% discount compared to On-Demand prices, but they can be reclaimed by AWS with a 2-minute notice."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Managed Identities allow apps to access services without managing secrets."
   },
   {
     "question_number": 38,
-    "question": "What is an AWS 'Edge Location' primarily used for?",
+    "question": "Which service provides continuous security assessments and recommendations with a secure score?",
     "options": [
-      { "id": "A", "text": "Running massive backend relational databases." },
-      { "id": "B", "text": "Caching content locally to reduce latency for end users via Amazon CloudFront." },
-      { "id": "C", "text": "Providing physical disaster recovery office space for customers." },
-      { "id": "D", "text": "Hosting core administrative systems." }
+      { "id": "A", "text": "Azure Monitor" },
+      { "id": "B", "text": "Microsoft Sentinel" },
+      { "id": "C", "text": "Defender for Cloud" },
+      { "id": "D", "text": "Azure Advisor" }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Edge Locations are endpoints used by CloudFront to cache assets closer to clients, distinct from full AWS Region data center groupings."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "C",
+    "explanation": "Defender for Cloud provides secure score, posture management, and recommendations."
   },
   {
     "question_number": 39,
-    "question": "What is the concept of 'Economies of Scale' in AWS?",
+    "question": "Which service lets you manage on-premises servers and Kubernetes clusters as if they were Azure resources?",
     "options": [
-      { "id": "A", "text": "The ability to scale infrastructure worldwide with one click." },
-      { "id": "B", "text": "AWS can achieve lower pay-as-you-go prices because it aggregates usage from millions of customers, buying hardware at massive bulk volume discounts." },
-      { "id": "C", "text": "The formula used to calculate multi-region network transfer fees." },
-      { "id": "D", "text": "The process of migrating legacy on-premise hardware." }
+      { "id": "A", "text": "Azure Arc" },
+      { "id": "B", "text": "Azure Migrate" },
+      { "id": "C", "text": "ExpressRoute" },
+      { "id": "D", "text": "Site-to-Site VPN" }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "As AWS grows, it passes hardware procurement cost savings onto customers via lower hourly rates and services tiered usage discounts."
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "A",
+    "explanation": "Arc extends Azure management to non-Azure environments like on-premises servers."
   },
   {
     "question_number": 40,
-    "question": "Which of the following describes a 'Hybrid Cloud' deployment strategy?",
+    "question": "Which tool compares the 3-year cost of running workloads on-premises vs in Azure?",
     "options": [
-      { "id": "A", "text": "Using only serverless services." },
-      { "id": "B", "text": "Combining on-premises data center infrastructure with public AWS cloud resources." },
-      { "id": "C", "text": "Hosting systems across multiple public cloud vendors simultaneously." },
-      { "id": "D", "text": "Relying purely on physical tape backups." }
+      { "id": "A", "text": "Pricing Calculator" },
+      { "id": "B", "text": "TCO Calculator" },
+      { "id": "C", "text": "Cost Analysis" },
+      { "id": "D", "text": "Budgets" }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 3: Azure Management and Governance",
     "correct_answer": "B",
-    "explanation": "A hybrid deployment connects existing on-premises data center configurations directly with public cloud systems to extend operations."
+    "explanation": "The Total Cost of Ownership calculator estimates on-prem vs cloud costs over time."
   },
   {
     "question_number": 41,
-    "question": "What security element controls inbound and outbound traffic at the subnet level within a VPC (stateless network control)?",
+    "question": "Which NIST characteristic describes the ability to provision resources without human intervention?",
     "options": [
-      { "id": "A", "text": "Security Group" },
-      { "id": "B", "text": "Network Access Control List (NACL)" },
-      { "id": "C", "text": "Internet Gateway" },
-      { "id": "D", "text": "NAT Gateway" }
+      { "id": "A", "text": "On-demand self-service" },
+      { "id": "B", "text": "Broad network access" },
+      { "id": "C", "text": "Resource pooling" },
+      { "id": "D", "text": "Measured service" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "Network ACLs act as an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets (stateless)."
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "A",
+    "explanation": "On-demand self-service allows users to provision cloud resources automatically without provider interaction."
   },
   {
     "question_number": 42,
-    "question": "Which AWS service allows you to easily connect and coordinate multiple serverless microservices into structured visual workflows?",
+    "question": "Public cloud is best described as:",
     "options": [
-      { "id": "A", "text": "AWS Lambda" },
-      { "id": "B", "text": "AWS Step Functions" },
-      { "id": "C", "text": "Amazon SQS" },
-      { "id": "D", "text": "Amazon SNS" }
+      { "id": "A", "text": "Dedicated hardware for a single organization" },
+      { "id": "B", "text": "Shared infrastructure managed by a provider, accessed over the internet" },
+      { "id": "C", "text": "Running workloads across multiple providers" },
+      { "id": "D", "text": "An on-premises private datacenter" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 1: Cloud Concepts",
     "correct_answer": "B",
-    "explanation": "AWS Step Functions is a low-code, visual workflow service that developers use to build distributed applications, configure processes, and orchestrate AWS Lambda tasks."
+    "explanation": "Public cloud is hosted by the provider and shared among multiple tenants, accessible via the internet."
   },
   {
     "question_number": 43,
-    "question": "Which service acts as a fully managed, highly available message queue service designed to decouple distributed software components?",
+    "question": "Which of the following is a SaaS solution?",
     "options": [
-      { "id": "A", "text": "Amazon SNS" },
-      { "id": "B", "text": "Amazon SQS" },
-      { "id": "C", "text": "AWS Step Functions" },
-      { "id": "D", "text": "Amazon Kinesis" }
+      { "id": "A", "text": "Azure SQL Database" },
+      { "id": "B", "text": "Azure Virtual Machines" },
+      { "id": "C", "text": "Microsoft 365" },
+      { "id": "D", "text": "Azure App Service" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon Simple Queue Service (SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems."
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Microsoft 365 is SaaS — the provider manages everything except data usage and access."
   },
   {
     "question_number": 44,
-    "question": "What service should you use to securely store, rotate, and retrieve database passwords, API keys, and other application credentials?",
+    "question": "What does Zero Trust mean?",
     "options": [
-      { "id": "A", "text": "AWS Systems Manager Parameter Store" },
-      { "id": "B", "text": "AWS Secrets Manager" },
-      { "id": "C", "text": "AWS KMS" },
-      { "id": "D", "text": "IAM Policies" }
+      { "id": "A", "text": "Trust all devices on the corporate network" },
+      { "id": "B", "text": "Trust but verify" },
+      { "id": "C", "text": "Never trust, always verify" },
+      { "id": "D", "text": "MFA is optional" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "AWS Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources, enabling automatic rotation of database passwords."
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Zero Trust assumes no device or user is inherently trusted; verification is always required."
   },
   {
     "question_number": 45,
-    "question": "Which AWS service is a managed data warehouse solution designed for running complex analytical queries against petabytes of structured data?",
+    "question": "Placing resources in Azure regions closest to end users primarily improves:",
     "options": [
-      { "id": "A", "text": "Amazon RDS" },
-      { "id": "B", "text": "Amazon DynamoDB" },
-      { "id": "C", "text": "Amazon Redshift" },
-      { "id": "D", "text": "Amazon ElastiCache" }
+      { "id": "A", "text": "High availability" },
+      { "id": "B", "text": "Global reach and lower latency" },
+      { "id": "C", "text": "Cost efficiency" },
+      { "id": "D", "text": "Governance" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes."
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "Deploying resources close to users reduces latency and improves global availability."
   },
   {
     "question_number": 46,
-    "question": "A team needs a shared file system that can be mounted concurrently by hundreds of Amazon EC2 instances running Linux. Which service fits?",
+    "question": "Azure Front Door is primarily used for:",
     "options": [
-      { "id": "A", "text": "Amazon EBS" },
-      { "id": "B", "text": "Amazon S3" },
-      { "id": "C", "text": "Amazon EFS" },
-      { "id": "D", "text": "AWS Storage Gateway" }
+      { "id": "A", "text": "DNS-level global routing" },
+      { "id": "B", "text": "Global HTTP acceleration and edge routing with WAF" },
+      { "id": "C", "text": "Site-to-site private connectivity" },
+      { "id": "D", "text": "L4 TCP distribution inside a VNet" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "Amazon Elastic File System (EFS) provides a simple, serverless, set-and-forget elastic file system for use with AWS Cloud services and on-premises resources (supports NFSv4)."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Azure Front Door accelerates HTTP traffic globally and includes WAF for security."
   },
   {
     "question_number": 47,
-    "question": "What service enables you to manage encryption keys centrally and control their usage across a wide range of AWS services?",
+    "question": "Which Azure service is best for building simple APIs that scale and are billed per execution?",
     "options": [
-      { "id": "A", "text": "AWS CloudHSM" },
-      { "id": "B", "text": "AWS Key Management Service (KMS)" },
-      { "id": "C", "text": "AWS Secrets Manager" },
-      { "id": "D", "text": "AWS Certificate Manager" }
+      { "id": "A", "text": "App Service" },
+      { "id": "B", "text": "Azure Functions" },
+      { "id": "C", "text": "AKS" },
+      { "id": "D", "text": "Container Instances" }
     ],
-    "domain": "Domain 2: Security and Compliance",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "AWS KMS combines secure, highly available hardware and software to provide a key management system scaled for the cloud, using symmetric and asymmetric cryptographic keys."
+    "explanation": "Functions are serverless and billed only when triggered, ideal for lightweight APIs."
   },
   {
     "question_number": 48,
-    "question": "Which service helps you audit, evaluate, and assess the configurations of your overall AWS resources against compliance baselines?",
+    "question": "Which service provides secure RDP/SSH access to VMs without exposing public IPs?",
     "options": [
-      { "id": "A", "text": "AWS Trusted Advisor" },
-      { "id": "B", "text": "AWS Config" },
-      { "id": "C", "text": "AWS Systems Manager" },
-      { "id": "D", "text": "AWS CloudTrail" }
+      { "id": "A", "text": "Azure Bastion" },
+      { "id": "B", "text": "NAT Gateway" },
+      { "id": "C", "text": "Jumpbox VM with public IP" },
+      { "id": "D", "text": "NSG inbound rule" }
     ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "AWS Config continuously monitors and records your AWS resource configurations, allowing you to automate the evaluation of recorded configurations against desired settings."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "A",
+    "explanation": "Bastion provides secure RDP/SSH sessions through the portal without public IPs."
   },
   {
     "question_number": 49,
-    "question": "What billing tool allows organizations to consolidate payments for multiple AWS accounts under a single master management profile?",
+    "question": "Which compute option offers the lowest cost for workloads that can be interrupted at any time?",
     "options": [
-      { "id": "A", "text": "AWS Cost Explorer" },
-      { "id": "B", "text": "AWS Budgets" },
-      { "id": "C", "text": "Consolidated Billing via AWS Organizations" },
-      { "id": "D", "text": "AWS Marketplace" }
+      { "id": "A", "text": "Reserved VM" },
+      { "id": "B", "text": "Spot VM" },
+      { "id": "C", "text": "Pay-as-you-go VM" },
+      { "id": "D", "text": "Dedicated Host" }
     ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "C",
-    "explanation": "Consolidated Billing is a feature of AWS Organizations that aggregates billing data across member accounts, maximizing volume tier discounts."
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Spot VMs are low-cost but can be evicted at any time, ideal for interruptible workloads."
   },
   {
     "question_number": 50,
-    "question": "Which service provides an in-memory database cache environment designed to improve application read performance and latency?",
+    "question": "Which tool enables high-speed command-line transfers to and from Azure Storage?",
     "options": [
-      { "id": "A", "text": "Amazon RDS" },
-      { "id": "B", "text": "Amazon ElastiCache" },
-      { "id": "C", "text": "Amazon DynamoDB Accelerator (DAX)" },
-      { "id": "D", "text": "Amazon Redshift" }
+      { "id": "A", "text": "Storage Explorer" },
+      { "id": "B", "text": "AzCopy" },
+      { "id": "C", "text": "Portal upload" },
+      { "id": "D", "text": "Power BI" }
     ],
-    "domain": "Domain 3: Cloud Technology & Services",
+    "domain": "Domain 2: Azure Architecture and Services",
     "correct_answer": "B",
-    "explanation": "Amazon ElastiCache allows you to seamlessly set up, run, and scale popular open-source compatible in-memory data stores (Redis or Memcached) in the cloud."
-  },
-  {
-    "question_number": 51,
-    "question": "An enterprise wants a dedicated, private physical network connection from their office data center directly to AWS, bypassing the public internet entirely. Which service should they use?",
-    "options": [
-      { "id": "A", "text": "AWS Site-to-Site VPN" },
-      { "id": "B", "text": "AWS Client VPN" },
-      { "id": "C", "text": "AWS Direct Connect" },
-      { "id": "D", "text": "VPC Peering" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "C",
-    "explanation": "AWS Direct Connect links your internal network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable, establishing a dedicated private connection."
-  },
-  {
-    "question_number": 52,
-    "question": "What is the primary function of an Elastic Load Balancer (ELB)?",
-    "options": [
-      { "id": "A", "text": "Automatically increasing the storage space of connected database volumes." },
-      { "id": "B", "text": "Distributing incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones." },
-      { "id": "C", "text": "Encrypting network packets before they leave a client machine." },
-      { "id": "D", "text": "Routing internet user domains to third-party web endpoints." }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "ELB automatically distributes incoming application traffic across multiple targets, ensuring fault tolerance and balance across compute resources."
-  },
-  {
-    "question_number": 53,
-    "question": "Which framework or program outlines AWS's data governance standards, infrastructure management security control mapping, and physical facility safety audits?",
-    "options": [
-      { "id": "A", "text": "AWS Well-Architected Tool" },
-      { "id": "B", "text": "AWS Compliance Programs" },
-      { "id": "C", "text": "AWS Trusted Advisor" },
-      { "id": "D", "text": "AWS Service Terms" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "AWS Compliance Programs help customers understand the robust controls in place at AWS to maintain security and data protection across global regions."
-  },
-  {
-    "question_number": 54,
-    "question": "Which AWS Support Plan represents the minimum tier required to obtain access to 24/7 phone/email support engineers and a dedicated Technical Account Manager (TAM)?",
-    "options": [
-      { "id": "A", "text": "Developer" },
-      { "id": "B", "text": "Business" },
-      { "id": "C", "text": "Enterprise On-Ramp" },
-      { "id": "D", "text": "Enterprise" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "D",
-    "explanation": "The Enterprise Support Plan includes a designated Technical Account Manager (TAM) to coordinate proactive/preventative guidance and operational support."
-  },
-  {
-    "question_number": 55,
-    "question": "Which tool offers automated real-time optimization recommendations across cost savings, security performance, fault tolerance, and service limits?",
-    "options": [
-      { "id": "A", "text": "AWS Config" },
-      { "id": "B", "text": "AWS Trusted Advisor" },
-      { "id": "C", "text": "AWS Systems Manager" },
-      { "id": "D", "text": "Amazon CloudWatch" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "AWS Trusted Advisor inspects your AWS environment and makes recommendations for saving money, improving system performance and reliability, or closing security gaps."
-  },
-  {
-    "question_number": 56,
-    "question": "What service allows you to run containerized applications on AWS without having to provision or manage the underlying EC2 server instances (serverless container compute)?",
-    "options": [
-      { "id": "A", "text": "Amazon ECS" },
-      { "id": "B", "text": "Amazon EKS" },
-      { "id": "C", "text": "AWS Fargate" },
-      { "id": "D", "text": "Amazon EC2" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "AWS Fargate is a serverless, pay-as-you-go compute engine for containers that works with both Amazon ECS and Amazon EKS, eliminating node management."
-  },
-  {
-    "question_number": 57,
-    "question": "Which AWS service is an interactive query service that lets you analyze data directly in Amazon S3 using standard SQL syntax?",
-    "options": [
-      { "id": "A", "text": "Amazon Redshift" },
-      { "id": "B", "text": "Amazon Athena" },
-      { "id": "C", "text": "AWS Glue" },
-      { "id": "D", "text": "Amazon EMR" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run against files in S3 buckets."
-  },
-  {
-    "question_number": 58,
-    "question": "What is a key benefit of using AWS Organizations?",
-    "options": [
-      { "id": "A", "text": "Automating OS updates across EC2 nodes." },
-      { "id": "B", "text": "Centrally managing environment settings, compliance rules, and billing across multiple AWS accounts." },
-      { "id": "C", "text": "Accelerating code compiler speeds." },
-      { "id": "D", "text": "Providing offline physical data migration tools." }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "AWS Organizations helps you centrally manage and govern your environment as you grow and scale your AWS resources, including consolidated billing features."
-  },
-  {
-    "question_number": 59,
-    "question": "What policy type can be applied within AWS Organizations to centrally restrict the maximum available permissions for accounts under an organizational unit (OU)?",
-    "options": [
-      { "id": "A", "text": "IAM Permission Boundary" },
-      { "id": "B", "text": "Service Control Policy (SCP)" },
-      { "id": "C", "text": "IAM Group Policy" },
-      { "id": "D", "text": "VPC Endpoint Policy" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "Service Control Policies (SCPs) are a type of organization policy that you can use to manage permissions in your organization, acting as a guardrail for member accounts."
-  },
-  {
-    "question_number": 60,
-    "question": "Which AWS purchase option offers fixed compute capacity reductions based on a commitment to a consistent amount of compute usage (measured in $/hour) for a 1 or 3-year term?",
-    "options": [
-      { "id": "A", "text": "On-Demand Instances" },
-      { "id": "B", "text": "Savings Plans" },
-      { "id": "C", "text": "Spot Instances" },
-      { "id": "D", "text": "Dedicated Hosts" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "B",
-    "explanation": "Savings Plans is a flexible pricing model that offers low prices on EC2, Lambda, and Fargate usage, in exchange for a commitment to a consistent amount of usage."
-  },
-  {
-    "question_number": 61,
-    "question": "Which cloud benefit describes the capability to expand operations to a worldwide presence in a matter of minutes?",
-    "options": [
-      { "id": "A", "text": "Agility" },
-      { "id": "B", "text": "Go Global in Minutes" },
-      { "id": "C", "text": "Elasticity" },
-      { "id": "D", "text": "Cost Optimization" }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Easily deploy your application in multiple AWS Regions around the world with just a few clicks, providing lower latency and a better experience for users at minimal cost."
-  },
-  {
-    "question_number": 62,
-    "question": "What pillar of the AWS Well-Architected Framework focuses on the ability to safeguard information, systems, and assets while delivering business value?",
-    "options": [
-      { "id": "A", "text": "Reliability" },
-      { "id": "B", "text": "Security" },
-      { "id": "C", "text": "Operational Excellence" },
-      { "id": "D", "text": "Performance Efficiency" }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "The Security pillar encompasses confidentiality and integrity of data, protecting identities, and managing user permissions effectively."
-  },
-  {
-    "question_number": 63,
-    "question": "Which service provides a central dashboard for orchestrating patch management, software inventories, and remote shell executions across fleet nodes?",
-    "options": [
-      { "id": "A", "text": "AWS Config" },
-      { "id": "B", "text": "AWS CloudFormation" },
-      { "id": "C", "text": "AWS Systems Manager" },
-      { "id": "D", "text": "AWS OpsWorks" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "AWS Systems Manager is a secure end-to-end management solution for your hybrid cloud environment, helping to manage patches, inventory, and automate tasks."
-  },
-  {
-    "question_number": 64,
-    "question": "What type of storage is Amazon S3?",
-    "options": [
-      { "id": "A", "text": "Block storage" },
-      { "id": "B", "text": "File storage" },
-      { "id": "C", "text": "Object storage" },
-      { "id": "D", "text": "Instance store storage" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "Amazon S3 is an object storage service that stores data as objects within buckets, accessible via web service APIs anywhere on the internet."
-  },
-  {
-    "question_number": 65,
-    "question": "Which AWS database service is non-relational, graph-oriented, and designed for managing highly connected datasets like social networks?",
-    "options": [
-      { "id": "A", "text": "Amazon RDS" },
-      { "id": "B", "text": "Amazon Neptune" },
-      { "id": "C", "text": "Amazon DocumentDB" },
-      { "id": "D", "text": "Amazon Keyspaces" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets."
-  },
-  {
-    "question_number": 66,
-    "question": "What service should you use to migrate relational databases to AWS easily and securely with minimal application downtime?",
-    "options": [
-      { "id": "A", "text": "AWS Application Discovery Service" },
-      { "id": "B", "text": "AWS Database Migration Service (DMS)" },
-      { "id": "C", "text": "AWS DataSync" },
-      { "id": "D", "text": "AWS Migration Hub" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "AWS DMS helps you migrate databases to AWS quickly and securely, keeping the source database fully operational during the migration process."
-  },
-  {
-    "question_number": 67,
-    "question": "What is the primary architectural concept behind 'Scalability'?",
-    "options": [
-      { "id": "A", "text": "The capacity of a system to grow or shrink its compute scale to handle increased or decreased workload demands." },
-      { "id": "B", "text": "The protocol used to encrypt outbound network traffic." },
-      { "id": "C", "text": "The payment structure applied to Enterprise support accounts." },
-      { "id": "D", "text": "The physical area taken up by hardware servers." }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "A",
-    "explanation": "Scalability is the ability of an application or infrastructure to accommodate growth in traffic or transaction volumes without degrading performance."
-  },
-  {
-    "question_number": 68,
-    "question": "Which framework contains standard design guidelines organized into 6 pillars to evaluate cloud deployments?",
-    "options": [
-      { "id": "A", "text": "AWS Cloud Adoption Framework (CAF)" },
-      { "id": "B", "text": "AWS Well-Architected Framework" },
-      { "id": "C", "text": "AWS Enterprise Support Catalog" },
-      { "id": "D", "text": "AWS Service Health Dashboard" }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "The AWS Well-Architected Framework helps cloud architects build secure, high-performing, resilient, and efficient infrastructure based on operational pillars."
-  },
-  {
-    "question_number": 69,
-    "question": "What model describes how infrastructure ownership tasks are divided between the cloud vendor and the consumer client?",
-    "options": [
-      { "id": "A", "text": "AWS Pricing Model" },
-      { "id": "B", "text": "AWS Shared Responsibility Model" },
-      { "id": "C", "text": "AWS Architecture Blueprint" },
-      { "id": "D", "text": "AWS Service Level Agreement" }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "The Shared Responsibility Model delineates who handles the security tasks associated with data, operating systems, applications, and hardware."
-  },
-  {
-    "question_number": 70,
-    "question": "Which service acts as a managed firewall layer to protect web applications from common web exploits and malicious bots (such as SQL injection attacks)?",
-    "options": [
-      { "id": "A", "text": "AWS Shield" },
-      { "id": "B", "text": "AWS Web Application Firewall (WAF)" },
-      { "id": "C", "text": "Amazon GuardDuty" },
-      { "id": "D", "text": "Network ACLs" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common web attack patterns."
-  },
-  {
-    "question_number": 71,
-    "question": "What is an AWS 'Region'?",
-    "options": [
-      { "id": "A", "text": "A physical data center room belonging to a customer." },
-      { "id": "B", "text": "A geographical area that contains multiple, physically isolated and separate Availability Zones." },
-      { "id": "C", "text": "A local global endpoint connection for caching static media assets." },
-      { "id": "D", "text": "A compliance report certifying facility safety protocols." }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers containing isolated Availability Zones."
-  },
-  {
-    "question_number": 72,
-    "question": "Which service is a fully managed cloud service for broad scale business intelligence (BI) data visualizations and dashboard builds?",
-    "options": [
-      { "id": "A", "text": "Amazon Redshift" },
-      { "id": "B", "text": "Amazon QuickSight" },
-      { "id": "C", "text": "AWS Glue" },
-      { "id": "D", "text": "Amazon Athena" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to deliver insights to everyone in your organization."
-  },
-  {
-    "question_number": 73,
-    "question": "What service serves as a digital catalog with thousands of software listings from independent vendors that run easily on AWS?",
-    "options": [
-      { "id": "A", "text": "AWS Config" },
-      { "id": "B", "text": "AWS Systems Manager" },
-      { "id": "C", "text": "AWS Marketplace" },
-      { "id": "D", "text": "AWS Artifact" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "C",
-    "explanation": "AWS Marketplace is a curated digital catalog that customers can use to find, buy, deploy, and manage third-party software, data, and services."
-  },
-  {
-    "question_number": 74,
-    "question": "Which tool can help compute total cost reductions derived from migrating on-premise infrastructure setups over to AWS cloud architectures?",
-    "options": [
-      { "id": "A", "text": "AWS Pricing Calculator" },
-      { "id": "B", "text": "AWS Budgets" },
-      { "id": "C", "text": "AWS Cost Explorer" },
-      { "id": "D", "text": "AWS Migration Evaluator" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "A",
-    "explanation": "The AWS Pricing Calculator lets you estimate the cost of architectural solutions before building them, helping compare on-premises vs cloud scenarios."
-  },
-  {
-    "question_number": 75,
-    "question": "What represents the fundamental billing policy rule applied to core computing compute server instances on AWS?",
-    "options": [
-      { "id": "A", "text": "Fixed monthly subscriptions regardless of status." },
-      { "id": "B", "text": "Pay-as-you-go per-second or per-minute variable increments based on active uptime status." },
-      { "id": "C", "text": "Mandatory storage minimum volume processing fee schedules." },
-      { "id": "D", "text": "Free tier structures applied to multi-tenant clusters indefinitely." }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "B",
-    "explanation": "With AWS, you pay only for the utility compute resources you consume, billing them based on active usage duration states without termination penalties."
-  },
-  {
-    "question_number": 76,
-    "question": "Which service offers developers integrated repositories for software code building, testing, and continuous delivery pipeline executions?",
-    "options": [
-      { "id": "A", "text": "AWS CodePipeline" },
-      { "id": "B", "text": "AWS CloudFormation" },
-      { "id": "C", "text": "AWS Systems Manager" },
-      { "id": "D", "text": "AWS OpsWorks" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "A",
-    "explanation": "AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates."
-  },
-  {
-    "question_number": 77,
-    "question": "What is the primary function of Amazon Elastic Container Service (Amazon ECS)?",
-    "options": [
-      { "id": "A", "text": "A highly scalable, high-performance container orchestration service that supports Docker containers." },
-      { "id": "B", "text": "A tool used to monitor object upload frequencies to S3." },
-      { "id": "C", "text": "A data lake warehouse querying interface." },
-      { "id": "D", "text": "A hardware networking switch matrix tool." }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "A",
-    "explanation": "Amazon ECS allows you to easily run and scale containerized applications on AWS, eliminating the need to install and operate your own container orchestration software."
-  },
-  {
-    "question_number": 78,
-    "question": "Which component allows a secure connection between an application inside a private subnet and a service like Amazon S3 without routing traffic through the public internet?",
-    "options": [
-      { "id": "A", "text": "Internet Gateway" },
-      { "id": "B", "text": "NAT Gateway" },
-      { "id": "C", "text": "VPC Endpoint" },
-      { "id": "D", "text": "Transit Gateway" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "C",
-    "explanation": "A VPC Endpoint enables private connections between your VPC and supported AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect."
-  },
-  {
-    "question_number": 79,
-    "question": "What is the primary objective of applying the 'Principle of Least Privilege' in IAM architectures?",
-    "options": [
-      { "id": "A", "text": "Ensuring all employees share single management administrator passwords." },
-      { "id": "B", "text": "Granting only the bare minimum required access permissions necessary for users to perform their specific operational tasks." },
-      { "id": "C", "text": "Lowering cross-region network pricing brackets." },
-      { "id": "D", "text": "Restricting database engine sizes to standard defaults." }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "The principle of least privilege helps reduce security risks by restricting identities to perform only explicitly required operational activities."
-  },
-  {
-    "question_number": 80,
-    "question": "Which type of firewall rules are 'stateful' and apply directly to protect specific individual EC2 server instances?",
-    "options": [
-      { "id": "A", "text": "Network ACLs" },
-      { "id": "B", "text": "Security Groups" },
-      { "id": "C", "text": "Internet Gateways" },
-      { "id": "D", "text": "Route Tables" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "Security Groups act as a virtual firewall for your instance to control inbound and outbound traffic, operating at the instance level and evaluating statefully."
-  },
-  {
-    "question_number": 81,
-    "question": "What is the primary function of the AWS Command Line Interface (CLI)?",
-    "options": [
-      { "id": "A", "text": "To compile application code written in Python or Java." },
-      { "id": "B", "text": "To manage and control AWS services and resources through terminal shell command inputs." },
-      { "id": "C", "text": "To provide physical console port access to data center routers." },
-      { "id": "D", "text": "To create accounting ledger invoices automatically." }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "The AWS CLI is an open-source tool that enables you to interact with AWS services using commands in your command-line shell."
-  },
-  {
-    "question_number": 82,
-    "question": "Which AWS machine learning service allows developers to add intelligent text-to-speech capabilities to applications?",
-    "options": [
-      { "id": "A", "text": "Amazon Lex" },
-      { "id": "B", "text": "Amazon Polly" },
-      { "id": "C", "text": "Amazon Rekognition" },
-      { "id": "D", "text": "Amazon SageMaker" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon Polly uses advanced deep learning technologies to synthesize natural-sounding human speech from text inputs."
-  },
-  {
-    "question_number": 83,
-    "question": "What service should a team use to build, train, and deploy custom machine learning models at scale?",
-    "options": [
-      { "id": "A", "text": "Amazon Comprehend" },
-      { "id": "B", "text": "Amazon SageMaker" },
-      { "id": "C", "text": "Amazon Rekognition" },
-      { "id": "D", "text": "AWS DeepLens" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to prepare, build, train, and deploy machine learning models quickly."
-  },
-  {
-    "question_number": 84,
-    "question": "Which AWS storage service provides a hybrid cloud storage gateway tool connecting local on-premises environments with AWS cloud storage infrastructures?",
-    "options": [
-      { "id": "A", "text": "Amazon EFS" },
-      { "id": "B", "text": "AWS Storage Gateway" },
-      { "id": "C", "text": "Amazon EBS" },
-      { "id": "D", "text": "AWS Snowball" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "AWS Storage Gateway connects an on-premises software appliance with cloud-based storage to provide seamless integration with data security features."
-  },
-  {
-    "question_number": 85,
-    "question": "What AWS Support plan tier represents the minimum entry tier designed for small non-production development testing workloads needing basic email access response windows?",
-    "options": [
-      { "id": "A", "text": "Basic" },
-      { "id": "B", "text": "Developer" },
-      { "id": "C", "text": "Business" },
-      { "id": "D", "text": "Enterprise" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "B",
-    "explanation": "The Developer support plan offers early-stage guidance and technical support access via email ticketing systems during standard business hours."
-  },
-  {
-    "question_number": 86,
-    "question": "Which service acts as an automated notification tool capable of sending pub/sub push alerts via SMS, email, or HTTP endpoints?",
-    "options": [
-      { "id": "A", "text": "Amazon SQS" },
-      { "id": "B", "text": "Amazon Simple Notification Service (SNS)" },
-      { "id": "C", "text": "AWS Step Functions" },
-      { "id": "D", "text": "Amazon SES" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon SNS is a managed pub/sub messaging service for both system-to-system and system-to-person communication paths."
-  },
-  {
-    "question_number": 87,
-    "question": "Which AWS tool enables users to view and manage active operational thresholds, creating warning notifications before spending targets are breached?",
-    "options": [
-      { "id": "A", "text": "AWS Cost Explorer" },
-      { "id": "B", "text": "AWS Budgets" },
-      { "id": "C", "text": "AWS Systems Manager" },
-      { "id": "D", "text": "AWS Artifact" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "B",
-    "explanation": "AWS Budgets allows you to set custom cost and usage limits and alert you via email or SNS when your budget thresholds are crossed or forecasted to cross."
-  },
-  {
-    "question_number": 88,
-    "question": "What is the purpose of Amazon ElastiCache?",
-    "options": [
-      { "id": "A", "text": "To encrypt S3 data volumes." },
-      { "id": "B", "text": "To improve application performance by caching database queries in memory (Redis/Memcached)." },
-      { "id": "C", "text": "To automate network routing table edits." },
-      { "id": "D", "text": "To archive long-term legal logging text logs." }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "Amazon ElastiCache caches frequent queries in memory to reduce database retrieval load and optimize application delivery speeds."
-  },
-  {
-    "question_number": 89,
-    "question": "Which AWS pricing feature automatically applies volume discount fee reductions as an organization’s data utilization storage scales upwards?",
-    "options": [
-      { "id": "A", "text": "On-Demand baseline constants." },
-      { "id": "B", "text": "Tiered Pricing models." },
-      { "id": "C", "text": "Fixed contract agreements." },
-      { "id": "D", "text": "Spot pricing variables." }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "B",
-    "explanation": "Services like S3 implement Tiered Pricing, where the cost per gigabyte drops as your overall stored data volume passes specific scale levels."
-  },
-  {
-    "question_number": 90,
-    "question": "Which AWS service helps automate the creation, tracking, and management of SSL/TLS certificates used to encrypt web traffic?",
-    "options": [
-      { "id": "A", "text": "AWS Secrets Manager" },
-      { "id": "B", "text": "AWS Certificate Manager (ACM)" },
-      { "id": "C", "text": "AWS Key Management Service (KMS)" },
-      { "id": "D", "text": "AWS Artifact" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "B",
-    "explanation": "AWS Certificate Manager makes it easy to provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services."
-  },
-  {
-    "question_number": 91,
-    "question": "What pillar of the AWS Well-Architected Framework emphasizes the ability of a workload to perform its intended function correctly and consistently when it’s expected to?",
-    "options": [
-      { "id": "A", "text": "Performance Efficiency" },
-      { "id": "B", "text": "Reliability" },
-      { "id": "C", "text": "Security" },
-      { "id": "D", "text": "Operational Excellence" }
-    ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "The Reliability pillar focuses on workloads performing correctly and consistently, including the ability to operate and recover from infrastructure or service disruptions."
-  },
-  {
-    "question_number": 92,
-    "question": "Which service allows a company to deploy web applications and services instantly by simply uploading their application code, while AWS automatically handles provisioning, load balancing, and scaling?",
-    "options": [
-      { "id": "A", "text": "Amazon EC2" },
-      { "id": "B", "text": "AWS CloudFormation" },
-      { "id": "C", "text": "AWS Elastic Beanstalk" },
-      { "id": "D", "text": "AWS Systems Manager" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, and Go."
-  },
-  {
-    "question_number": 93,
-    "question": "What physical device series provides rugged, secure data transport solutions to migrate petabytes of data offline into AWS environments?",
-    "options": [
-      { "id": "A", "text": "AWS Direct Connect" },
-      { "id": "B", "text": "AWS DataSync" },
-      { "id": "C", "text": "AWS Snowball (AWS Snow Family)" },
-      { "id": "D", "text": "AWS Storage Gateway" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "The AWS Snow Family offers physical computing and storage devices to migrate data into and out of AWS without relying on network bandwidth when network transfer isn't practical."
-  },
-  {
-    "question_number": 94,
-    "question": "Which AWS security service uses machine learning and integrated threat data sources to identify malicious or suspicious activity within AWS environments?",
-    "options": [
-      { "id": "A", "text": "AWS WAF" },
-      { "id": "B", "text": "Amazon GuardDuty" },
-      { "id": "C", "text": "AWS Inspector" },
-      { "id": "D", "text": "AWS Artifact" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "B",
-    "explanation": "Amazon GuardDuty uses threat intelligence, machine learning, and anomaly detection models to identify suspicious or unauthorized activity across your AWS resources."
-  },
-  {
-    "question_number": 95,
-    "question": "Which tool provides an entry point for users to estimate monthly costs and build simple budget projections for conceptual AWS architecture blueprints?",
-    "options": [
-      { "id": "A", "text": "AWS Cost Explorer" },
-      { "id": "B", "text": "AWS Budgets" },
-      { "id": "C", "text": "AWS Pricing Calculator" },
-      { "id": "D", "text": "AWS Systems Manager" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "C",
-    "explanation": "The AWS Pricing Calculator allows users to estimate costs for any combination of AWS services based on architectural assumptions."
-  },
-  {
-    "question_number": 96,
-    "question": "Which service provides a serverless compute engine for containers that allows you to run containerized workloads without managing the underlying EC2 server nodes?",
-    "options": [
-      { "id": "A", "text": "Amazon EC2" },
-      { "id": "B", "text": "Amazon ECS" },
-      { "id": "C", "text": "AWS Fargate" },
-      { "id": "D", "text": "Amazon EKS" }
-    ],
-    "domain": "Domain 3: Cloud Technology & Services",
-    "correct_answer": "C",
-    "explanation": "AWS Fargate removes the operational overhead of managing EC2 host instances for container platforms like ECS or EKS."
-  },
-  {
-    "question_number": 97,
-    "question": "Which tool automates software release workflows, allowing developers to model, visualize, and execute rapid builds, tests, and deployment pipeline steps?",
-    "options": [
-      { "id": "A", "text": "AWS CodeBuild" },
-      { "id": "B", "text": "AWS CodeDeploy" },
-      { "id": "C", "text": "AWS CodePipeline" },
-      { "id": "D", "text": "AWS CloudFormation" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "C",
-    "explanation": "AWS CodePipeline models and orchestrates the automated tasks required to move code changes from source repositories into final production states."
-  },
-  {
-    "question_number": 98,
-    "question": "What service should you use to monitor cost variables over specific thresholds, configuring automated notifications via email or SNS when costs exceed forecasts?",
-    "options": [
-      { "id": "A", "text": "AWS Cost Explorer" },
-      { "id": "B", "text": "AWS Pricing Calculator" },
-      { "id": "C", "text": "AWS Budgets" },
-      { "id": "D", "text": "AWS Trusted Advisor" }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "C",
-    "explanation": "AWS Budgets actively checks cost updates and usage thresholds, generating alerts before spending targets are breached."
-  },
-  {
-    "question_number": 99,
-    "question": "What is the easiest way to grant a user time-limited access to download a private file from an Amazon S3 bucket without altering bucket policy settings?",
-    "options": [
-      { "id": "A", "text": "Creating a temporary IAM user profile." },
-      { "id": "B", "text": "Modifying the object ACL to public-read status." },
-      { "id": "C", "text": "Attaching a global corporate SCP rule." },
-      { "id": "D", "text": "Generating a secure Pre-Signed URL." }
-    ],
-    "domain": "Domain 4: Billing, Pricing & Support",
-    "correct_answer": "D",
-    "explanation": "A pre-signed URL gives users temporary access to download or upload specific objects using the credentials of the user who generated it, expiring after a set duration."
-  },
-  {
-    "question_number": 100,
-    "question": "Which service provides comprehensive, managed Distributed Denial of Service (DDoS) protection for applications deployed on AWS?",
-    "options": [
-      { "id": "A", "text": "AWS Shield" },
-      { "id": "B", "text": "AWS WAF" },
-      { "id": "C", "text": "Amazon GuardDuty" },
-      { "id": "D", "text": "Amazon Inspector" }
-    ],
-    "domain": "Domain 2: Security and Compliance",
-    "correct_answer": "A",
-    "explanation": "AWS Shield provides automatic protection against common infrastructure-level DDoS attacks for resources running on AWS."
+    "explanation": "AzCopy is a command-line utility optimized for fast data transfers to and from Azure Storage."
   }
 ]
