@@ -1,652 +1,2502 @@
 [
   {
     "question_number": 1,
-    "question": "Which cloud characteristic means billing is based on actual usage?",
+    "question": "Which AWS service allows you to build, train, and deploy custom machine learning models at scale?",
     "options": [
-      { "id": "A", "text": "Broad network access" },
-      { "id": "B", "text": "Resource pooling" },
-      { "id": "C", "text": "Measured service" },
-      { "id": "D", "text": "Elasticity" }
+      {
+        "id": "A",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Amazon SageMaker"
+      },
+      {
+        "id": "D",
+        "text": "AWS Lambda"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 1: Fundamentals of AI and ML",
     "correct_answer": "C",
-    "explanation": "Cloud resources are metered, and billing is based on consumption."
+    "explanation": "SageMaker is AWS’s end-to-end ML platform for building, training, and deploying custom models."
   },
   {
     "question_number": 2,
-    "question": "Which deployment model combines on-premises and Azure resources?",
+    "question": "Which of the following best describes unsupervised learning?",
     "options": [
-      { "id": "A", "text": "Public Cloud" },
-      { "id": "B", "text": "Private Cloud" },
-      { "id": "C", "text": "Hybrid Cloud" },
-      { "id": "D", "text": "Community Cloud" }
+      {
+        "id": "A",
+        "text": "Predicting numeric values using labeled data"
+      },
+      {
+        "id": "B",
+        "text": "Identifying patterns or clusters in unlabeled data"
+      },
+      {
+        "id": "C",
+        "text": "Using rewards and penalties to train an agent"
+      },
+      {
+        "id": "D",
+        "text": "Applying labeled data to train a model"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "C",
-    "explanation": "Hybrid blends on-premises infrastructure with Azure resources."
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "B",
+    "explanation": "Unsupervised learning finds structure in data without labeled outputs."
   },
   {
     "question_number": 3,
-    "question": "In which service model does Azure manage the OS and runtime?",
+    "question": "A retail company wants to summarize customer reviews. Which AWS service is best suited for this task?",
     "options": [
-      { "id": "A", "text": "IaaS" },
-      { "id": "B", "text": "PaaS" },
-      { "id": "C", "text": "SaaS" },
-      { "id": "D", "text": "DaaS" }
+      {
+        "id": "A",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Translate"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Polly"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 2: Fundamentals of Generative AI",
     "correct_answer": "B",
-    "explanation": "In PaaS, Azure manages OS and runtime; the customer focuses on the app and data."
+    "explanation": "Comprehend can perform NLP tasks like sentiment analysis and summarization."
   },
   {
     "question_number": 4,
-    "question": "Moving from buying servers to pay-as-you-go billing best illustrates:",
+    "question": "What is one advantage of using Retrieval-Augmented Generation (RAG) with a foundation model?",
     "options": [
-      { "id": "A", "text": "Capital Expenditure (CapEx)" },
-      { "id": "B", "text": "Operational Expenditure (OpEx)" },
-      { "id": "C", "text": "Elasticity" },
-      { "id": "D", "text": "SLA" }
+      {
+        "id": "A",
+        "text": "Reduces latency by skipping the model altogether"
+      },
+      {
+        "id": "B",
+        "text": "Improves prediction speed by pruning the model"
+      },
+      {
+        "id": "C",
+        "text": "Provides up-to-date, context-specific answers using external data"
+      },
+      {
+        "id": "D",
+        "text": "Decreases API cost by caching prompt results"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Pay-as-you-go billing is an OpEx model, unlike CapEx (hardware purchase)."
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "RAG enhances foundation models by retrieving relevant documents before generating responses."
   },
   {
     "question_number": 5,
-    "question": "In SaaS, who is responsible for data classification and access?",
+    "question": "Which type of model training is used to specialize a foundation model for a specific task or dataset?",
     "options": [
-      { "id": "A", "text": "Microsoft" },
-      { "id": "B", "text": "The customer" },
-      { "id": "C", "text": "A shared third party" },
-      { "id": "D", "text": "No one" }
+      {
+        "id": "A",
+        "text": "Pre-training"
+      },
+      {
+        "id": "B",
+        "text": "Prompt chaining"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tuning"
+      },
+      {
+        "id": "D",
+        "text": "Embedding"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Even in SaaS, customers own and classify their data."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Fine-tuning adapts a pre-trained model to new tasks using labeled domain-specific data."
   },
   {
     "question_number": 6,
-    "question": "Best option to host a web app without managing OS patches:",
+    "question": "Which AWS service provides access to foundation models like Claude, Jurassic, or Titan via API without managing infrastructure?",
     "options": [
-      { "id": "A", "text": "Virtual Machines" },
-      { "id": "B", "text": "App Service" },
-      { "id": "C", "text": "AKS" },
-      { "id": "D", "text": "Container Instances" }
+      {
+        "id": "A",
+        "text": "Amazon SageMaker"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Kendra"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "D",
+        "text": "AWS Lambda"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "App Service is a PaaS platform for hosting apps without managing OS updates."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Bedrock provides fully managed API access to multiple foundation models."
   },
   {
     "question_number": 7,
-    "question": "Private, dedicated connectivity with predictable latency to Azure:",
+    "question": "In the context of AI, what is “bias” most accurately defined as?",
     "options": [
-      { "id": "A", "text": "VPN Gateway" },
-      { "id": "B", "text": "ExpressRoute" },
-      { "id": "C", "text": "Traffic Manager" },
-      { "id": "D", "text": "Front Door" }
+      {
+        "id": "A",
+        "text": "An overuse of GPU resources during training"
+      },
+      {
+        "id": "B",
+        "text": "A measure of model complexity"
+      },
+      {
+        "id": "C",
+        "text": "Systematic error that unfairly influences model outcomes"
+      },
+      {
+        "id": "D",
+        "text": "A type of deep learning optimization"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "ExpressRoute offers private, dedicated connections with predictable latency."
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "Bias in AI typically refers to unintended, unfair impacts on decisions."
   },
   {
     "question_number": 8,
-    "question": "To survive a datacenter failure inside a region, deploy across:",
+    "question": "Which service would help you build a multilingual chatbot with speech recognition?",
     "options": [
-      { "id": "A", "text": "Availability Sets" },
-      { "id": "B", "text": "Resource Groups" },
-      { "id": "C", "text": "Availability Zones" },
-      { "id": "D", "text": "Region pairs" }
+      {
+        "id": "A",
+        "text": "Amazon Translate + Amazon Comprehend"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Polly + Amazon Rekognition"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex + Amazon Transcribe"
+      },
+      {
+        "id": "D",
+        "text": "Amazon SageMaker + Amazon Textract"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 5: Security, Compliance, and Governance",
     "correct_answer": "C",
-    "explanation": "AZs are independent datacenters within a region; they ensure resilience."
+    "explanation": "Lex handles chatbot logic; Transcribe converts speech to text."
   },
   {
     "question_number": 9,
-    "question": "Make a Storage account reachable via a private IP inside a VNet:",
+    "question": "Which AWS service helps generate speech from text, useful for voice-enabled applications?",
     "options": [
-      { "id": "A", "text": "Service Endpoint" },
-      { "id": "B", "text": "Private Endpoint" },
-      { "id": "C", "text": "NAT Gateway" },
-      { "id": "D", "text": "Public IP" }
+      {
+        "id": "A",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Transcribe"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Q"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "Maps a private IP in your VNet to the storage account for secure access."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "A",
+    "explanation": "Polly converts text to speech in lifelike voices."
   },
   {
     "question_number": 10,
-    "question": "Run a single container quickly without managing servers or clusters:",
+    "question": "What is a “token” in the context of large language models?",
     "options": [
-      { "id": "A", "text": "AKS" },
-      { "id": "B", "text": "App Service" },
-      { "id": "C", "text": "Container Instances" },
-      { "id": "D", "text": "VM Scale Sets" }
+      {
+        "id": "A",
+        "text": "A multi-factor authentication method"
+      },
+      {
+        "id": "B",
+        "text": "A pre-processed image input"
+      },
+      {
+        "id": "C",
+        "text": "A segment of text used during model inference"
+      },
+      {
+        "id": "D",
+        "text": "An access credential for invoking APIs"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 2: Fundamentals of Generative AI",
     "correct_answer": "C",
-    "explanation": "Azure Container Instances run containers serverlessly, without clusters."
+    "explanation": "Tokens are subunits of text (words, subwords) processed by LLMs. Q11. Which AWS service can help identify personal information like credit card numbers or names in a training dataset stored in Amazon S3? A) AWS IAM B) Amazon Macie C) Amazon Textract D) AWS CloudTrail Q12. What is the purpose of SageMaker Clarify? A) Launching endpoint servers for foundation models B) Evaluating model speed and GPU usage C) Identifying bias and explaining model predictions D) Serving prompts to Amazon Bedrock Q13. A developer needs a vector database to store text embeddings for semantic search. Which AWS service is most appropriate? A) Amazon DynamoDB B) Amazon DocumentDB C) Amazon OpenSearch with k-NN D) Amazon Polly Q14. Which of the following is a common risk of generative AI in production? A) Deployment via HTTPS B) High recall C) Model hallucination D) Insufficient GPU logging Q15. What is the primary role of Amazon Lex in AI-powered applications? A) Sentiment analysis B) Speech synthesis C) Building conversational interfaces and chatbots D) Object detection Q16. What type of prompting helps models reason more clearly by breaking tasks into logical steps? A) Zero-shot prompting B) Prompt chaining C) Chain-of-thought prompting D) Embedding prompting Q17. Which AWS service allows a user to catalog, govern, and manage AI-related datasets? A) Amazon DataZone B) Amazon Inspector C) Amazon S3 D) AWS Artifact Q18. What is a model card in SageMaker used for? A) Encrypting model input/output B) Documenting model use, data, metrics, and ethical considerations C) Launching auto-scaling endpoints D) Selecting the correct foundation model from Amazon Bedrock Q19. Which AWS service helps with identifying and logging all API activity related to your AI infrastructure? A) Amazon Macie B) AWS Config C) AWS CloudTrail D) Amazon Inspector Q20. Which AWS tool helps ensure that only approved users and roles can access an Amazon Bedrock model endpoint? A) AWS KMS B) AWS IAM C) Amazon Polly D) Amazon Route 53"
   },
   {
     "question_number": 11,
-    "question": "Which service provides Layer 7 load balancing and a Web Application Firewall (WAF)?",
+    "question": "Which AWS service can help identify personal information like credit card numbers or names in a training dataset stored in Amazon S3?",
     "options": [
-      { "id": "A", "text": "Load Balancer" },
-      { "id": "B", "text": "Application Gateway" },
-      { "id": "C", "text": "Traffic Manager" },
-      { "id": "D", "text": "Azure Front Door" }
+      {
+        "id": "A",
+        "text": "AWS IAM"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Textract"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 4: Guidelines for Responsible AI",
     "correct_answer": "B",
-    "explanation": "Application Gateway offers Layer 7 HTTP load balancing and WAF for app protection."
+    "explanation": "Macie detects and classifies sensitive data in S3, such as PII."
   },
   {
     "question_number": 12,
-    "question": "Which option provides low-latency private connectivity between two VNets?",
+    "question": "What is the purpose of SageMaker Clarify?",
     "options": [
-      { "id": "A", "text": "VNet Peering" },
-      { "id": "B", "text": "VPN Gateway" },
-      { "id": "C", "text": "ExpressRoute" },
-      { "id": "D", "text": "NAT Gateway" }
+      {
+        "id": "A",
+        "text": "Launching endpoint servers for foundation models"
+      },
+      {
+        "id": "B",
+        "text": "Evaluating model speed and GPU usage"
+      },
+      {
+        "id": "C",
+        "text": "Identifying bias and explaining model predictions"
+      },
+      {
+        "id": "D",
+        "text": "Serving prompts to Amazon Bedrock"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "A",
-    "explanation": "VNet Peering provides low-latency, high-bandwidth private connectivity between VNets."
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "SageMaker Clarify supports fairness and explainability through metrics and SHAP values."
   },
   {
     "question_number": 13,
-    "question": "Which service hosts public DNS zones for domains in Azure?",
+    "question": "A developer needs a vector database to store text embeddings for semantic search. Which AWS service is most appropriate?",
     "options": [
-      { "id": "A", "text": "Private DNS" },
-      { "id": "B", "text": "Azure DNS" },
-      { "id": "C", "text": "DNS Forwarder" },
-      { "id": "D", "text": "Azure Firewall" }
+      {
+        "id": "A",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "id": "B",
+        "text": "Amazon DocumentDB"
+      },
+      {
+        "id": "C",
+        "text": "Amazon OpenSearch with k-NN"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Polly"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "Azure DNS hosts and manages public DNS zones for your domains."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "OpenSearch supports vector search for embeddings using k-Nearest Neighbors."
   },
   {
     "question_number": 14,
-    "question": "Which Blob Storage tier is the cheapest option for rarely accessed data, with hours needed for retrieval?",
+    "question": "Which of the following is a common risk of generative AI in production?",
     "options": [
-      { "id": "A", "text": "Hot" },
-      { "id": "B", "text": "Cool" },
-      { "id": "C", "text": "Archive" },
-      { "id": "D", "text": "Premium" }
+      {
+        "id": "A",
+        "text": "Deployment via HTTPS"
+      },
+      {
+        "id": "B",
+        "text": "High recall"
+      },
+      {
+        "id": "C",
+        "text": "Model hallucination"
+      },
+      {
+        "id": "D",
+        "text": "Insufficient GPU logging"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 1: Fundamentals of AI and ML",
     "correct_answer": "C",
-    "explanation": "Archive tier is the cheapest storage, but retrieval takes hours."
+    "explanation": "A common risk where the model outputs plausible but false or made-up content."
   },
   {
     "question_number": 15,
-    "question": "Which globally distributed NoSQL database supports multiple APIs?",
+    "question": "What is the primary role of Amazon Lex in AI-powered applications?",
     "options": [
-      { "id": "A", "text": "Azure SQL Database" },
-      { "id": "B", "text": "Azure Table Storage" },
-      { "id": "C", "text": "Cosmos DB" },
-      { "id": "D", "text": "SQL Managed Instance" }
+      {
+        "id": "A",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "B",
+        "text": "Speech synthesis"
+      },
+      {
+        "id": "C",
+        "text": "Building conversational interfaces and chatbots"
+      },
+      {
+        "id": "D",
+        "text": "Object detection"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 4: Guidelines for Responsible AI",
     "correct_answer": "C",
-    "explanation": "Cosmos DB is a globally distributed, multi-API NoSQL database."
+    "explanation": "Lex provides voice/text-based interfaces powered by NLP."
   },
   {
     "question_number": 16,
-    "question": "Which governance feature enforces rules like \"resources must be deployed in approved regions\"?",
+    "question": "What type of prompting helps models reason more clearly by breaking tasks into logical steps?",
     "options": [
-      { "id": "A", "text": "Resource Locks" },
-      { "id": "B", "text": "Azure Policy" },
-      { "id": "C", "text": "Azure Monitor" },
-      { "id": "D", "text": "Azure Advisor" }
+      {
+        "id": "A",
+        "text": "Zero-shot prompting"
+      },
+      {
+        "id": "B",
+        "text": "Prompt chaining"
+      },
+      {
+        "id": "C",
+        "text": "Chain-of-thought prompting"
+      },
+      {
+        "id": "D",
+        "text": "Embedding prompting"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "Policies enforce compliance and restrict deployments to meet governance requirements."
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Helps improve reasoning by guiding the model step-by-step."
   },
   {
     "question_number": 17,
-    "question": "Which method prevents accidental deletion of critical Azure resources?",
+    "question": "Which AWS service allows a user to catalog, govern, and manage AI-related datasets?",
     "options": [
-      { "id": "A", "text": "ReadOnly lock" },
-      { "id": "B", "text": "CanNotDelete lock" },
-      { "id": "C", "text": "RBAC Reader role" },
-      { "id": "D", "text": "Conditional Access" }
+      {
+        "id": "A",
+        "text": "Amazon DataZone"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Inspector"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3"
+      },
+      {
+        "id": "D",
+        "text": "AWS Artifact"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "CanNotDelete prevents deletion while still allowing read/write."
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "A",
+    "explanation": "DataZone enables cataloging, governance, and sharing of data assets across teams."
   },
   {
     "question_number": 18,
-    "question": "Where can you find personalized alerts for outages or planned maintenance affecting your resources?",
+    "question": "What is a model card in SageMaker used for?",
     "options": [
-      { "id": "A", "text": "Azure Status page" },
-      { "id": "B", "text": "Service Health" },
-      { "id": "C", "text": "Azure Monitor" },
-      { "id": "D", "text": "Microsoft Sentinel" }
+      {
+        "id": "A",
+        "text": "Encrypting model input/output"
+      },
+      {
+        "id": "B",
+        "text": "Documenting model use, data, metrics, and ethical considerations"
+      },
+      {
+        "id": "C",
+        "text": "Launching auto-scaling endpoints"
+      },
+      {
+        "id": "D",
+        "text": "Selecting the correct foundation model from Amazon Bedrock"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
+    "domain": "Domain 5: Security, Compliance, and Governance",
     "correct_answer": "B",
-    "explanation": "Service Health provides resource-specific outage and maintenance alerts."
+    "explanation": "Model cards improve transparency and compliance by summarizing key model details."
   },
   {
     "question_number": 19,
-    "question": "Which tool should you use to estimate future costs for planned Azure solutions?",
+    "question": "Which AWS service helps with identifying and logging all API activity related to your AI infrastructure?",
     "options": [
-      { "id": "A", "text": "TCO Calculator" },
-      { "id": "B", "text": "Pricing Calculator" },
-      { "id": "C", "text": "Cost Analysis" },
-      { "id": "D", "text": "Budgets" }
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS Config"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "The Pricing Calculator estimates future Azure spend before deployment."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Tracks all API actions across your AWS account, including those for AI services."
   },
   {
     "question_number": 20,
-    "question": "If you want to give a team permissions to only one resource group, which method should you use?",
+    "question": "Which AWS tool helps ensure that only approved users and roles can access an Amazon Bedrock model endpoint?",
     "options": [
-      { "id": "A", "text": "Assign RBAC at subscription scope" },
-      { "id": "B", "text": "Assign RBAC at resource group scope" },
-      { "id": "C", "text": "Make them Owner at management group" },
-      { "id": "D", "text": "Create a new tenant" }
+      {
+        "id": "A",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Route 53"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
+    "domain": "Domain 3: Applications of Foundation Models",
     "correct_answer": "B",
-    "explanation": "Applying RBAC at the resource group level limits permissions only to that scope."
+    "explanation": "IAM controls access and permissions for Bedrock, SageMaker, and all AWS resources. Q21. A user needs to generate multiple image variations from a single text prompt. Which type of model would be best for this task? A) Recurrent neural network B) Diffusion model C) Transformer model D) Logistic regression Q22. Which AWS service helps convert handwritten forms into structured digital data? A) Amazon Textract B) Amazon Polly C) Amazon Lex D) AWS Glue Q23. In a generative AI application, which AWS service provides no-code tools to experiment with foundation models? A) Amazon Q B) Amazon Bedrock Studio C) Amazon PartyRock D) AWS Lambda Q24. Which of the following is a benefit of using AWS-managed foundation models instead of training your own? A) Requires more infrastructure setup B) Lower initial compute costs and faster time-to-value C) Allows unlimited control of the model’s internal layers D) Offers higher hallucination risk due to limited access Q25. Which metric is best suited to evaluate the quality of machine translation output? A) ROUGE B) BLEU C) AUC D) F1 Score Q26. What is one major benefit of in-context learning over fine-tuning? A) It updates the model’s weights for new tasks B) It costs less and doesn’t require retraining C) It guarantees higher accuracy D) It allows GPU scaling Q27. A machine learning model performs well on training data but poorly on new data. What is the most likely issue? A) Underfitting B) Data drift C) Overfitting D) High bias Q28. What is the purpose of Amazon SageMaker Feature Store? A) Manage IAM roles for training jobs B) Store structured logs for model performance C) Serve consistent features for training and inference D) Replace Glue for visual data transformation Q29. What is a key feature of the AWS Shared Responsibility Model as it applies to AI workloads? A) AWS is responsible for securing custom model code B) Customers are responsible for physical data center access C) AWS secures the infrastructure, customers secure configurations and data D) Customers rely on AWS to guarantee model explainability Q30. Which AWS tool enables human reviewers to verify low-confidence model predictions before results are finalized? A) Amazon Lex B) Amazon A2I C) AWS Macie D) Amazon Q"
   },
   {
     "question_number": 21,
-    "question": "Which of the following is an example of IaaS?",
+    "question": "A user needs to generate multiple image variations from a single text prompt. Which type of model would be best for this task?",
     "options": [
-      { "id": "A", "text": "Azure Virtual Machine" },
-      { "id": "B", "text": "App Service" },
-      { "id": "C", "text": "Microsoft 365" },
-      { "id": "D", "text": "Azure SQL Database" }
+      {
+        "id": "A",
+        "text": "Recurrent neural network"
+      },
+      {
+        "id": "B",
+        "text": "Diffusion model"
+      },
+      {
+        "id": "C",
+        "text": "Transformer model"
+      },
+      {
+        "id": "D",
+        "text": "Logistic regression"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "A",
-    "explanation": "VMs are IaaS, giving full OS control."
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B",
+    "explanation": "Diffusion models generate high-quality images from noise guided by text prompts."
   },
   {
     "question_number": 22,
-    "question": "Using Azure together with another cloud provider is known as:",
+    "question": "Which AWS service helps convert handwritten forms into structured digital data?",
     "options": [
-      { "id": "A", "text": "Hybrid Cloud" },
-      { "id": "B", "text": "Multi-cloud" },
-      { "id": "C", "text": "Private Cloud" },
-      { "id": "D", "text": "Community Cloud" }
+      {
+        "id": "A",
+        "text": "Amazon Textract"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "D",
+        "text": "AWS Glue"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Multi-cloud means using multiple providers at once."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "A",
+    "explanation": "Textract extracts text and structure (like tables, forms) from scanned documents."
   },
   {
     "question_number": 23,
-    "question": "Elasticity primarily refers to:",
+    "question": "In a generative AI application, which AWS service provides no-code tools to experiment with foundation models?",
     "options": [
-      { "id": "A", "text": "Scaling up only" },
-      { "id": "B", "text": "Scaling down only" },
-      { "id": "C", "text": "Automatically scaling resources with demand" },
-      { "id": "D", "text": "Ensuring compliance in different regions" }
+      {
+        "id": "A",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Bedrock Studio"
+      },
+      {
+        "id": "C",
+        "text": "Amazon PartyRock"
+      },
+      {
+        "id": "D",
+        "text": "AWS Lambda"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 3: Applications of Foundation Models",
     "correct_answer": "C",
-    "explanation": "Elasticity refers to scaling out and in as workload changes."
+    "explanation": "PartyRock allows users to experiment with Bedrock-hosted models via a no-code interface."
   },
   {
     "question_number": 24,
-    "question": "SLA stands for and represents:",
+    "question": "Which of the following is a benefit of using AWS-managed foundation models instead of training your own?",
     "options": [
-      { "id": "A", "text": "Secure Logon Agreement" },
-      { "id": "B", "text": "Service-Level Agreement — uptime commitment" },
-      { "id": "C", "text": "Software Licensing Agreement" },
-      { "id": "D", "text": "Storage-Level Arrangement" }
+      {
+        "id": "A",
+        "text": "Requires more infrastructure setup"
+      },
+      {
+        "id": "B",
+        "text": "Lower initial compute costs and faster time-to-value"
+      },
+      {
+        "id": "C",
+        "text": "Allows unlimited control of the model’s internal layers"
+      },
+      {
+        "id": "D",
+        "text": "Offers higher hallucination risk due to limited access"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 5: Security, Compliance, and Governance",
     "correct_answer": "B",
-    "explanation": "An SLA is a financial uptime guarantee from Microsoft."
+    "explanation": "Managed models save cost and time since training and infra are already done by AWS."
   },
   {
     "question_number": 25,
-    "question": "In IaaS, who is responsible for patching the guest operating system?",
+    "question": "Which metric is best suited to evaluate the quality of machine translation output?",
     "options": [
-      { "id": "A", "text": "Microsoft" },
-      { "id": "B", "text": "The customer" },
-      { "id": "C", "text": "No one" },
-      { "id": "D", "text": "The hardware vendor" }
+      {
+        "id": "A",
+        "text": "ROUGE"
+      },
+      {
+        "id": "B",
+        "text": "BLEU"
+      },
+      {
+        "id": "C",
+        "text": "AUC"
+      },
+      {
+        "id": "D",
+        "text": "F1 Score"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 3: Applications of Foundation Models",
     "correct_answer": "B",
-    "explanation": "In IaaS, Microsoft manages infrastructure, but customers patch the OS."
+    "explanation": "BLEU evaluates translation accuracy based on n-gram overlap with reference text."
   },
   {
     "question_number": 26,
-    "question": "Which storage redundancy option replicates data across availability zones in a region?",
+    "question": "What is one major benefit of in-context learning over fine-tuning?",
     "options": [
-      { "id": "A", "text": "LRS" },
-      { "id": "B", "text": "ZRS" },
-      { "id": "C", "text": "GRS" },
-      { "id": "D", "text": "RA-GRS" }
+      {
+        "id": "A",
+        "text": "It updates the model’s weights for new tasks"
+      },
+      {
+        "id": "B",
+        "text": "It costs less and doesn’t require retraining"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees higher accuracy"
+      },
+      {
+        "id": "D",
+        "text": "It allows GPU scaling"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 2: Fundamentals of Generative AI",
     "correct_answer": "B",
-    "explanation": "Zone-Redundant Storage replicates across availability zones in one region."
+    "explanation": "In-context learning uses well-structured prompts without changing the model itself."
   },
   {
     "question_number": 27,
-    "question": "Best method to move 100 TB of data into Azure when internet is too slow:",
+    "question": "A machine learning model performs well on training data but poorly on new data. What is the most likely issue?",
     "options": [
-      { "id": "A", "text": "AzCopy over weekend" },
-      { "id": "B", "text": "Azure Data Box" },
-      { "id": "C", "text": "SFTP to VM" },
-      { "id": "D", "text": "Storage Explorer" }
+      {
+        "id": "A",
+        "text": "Underfitting"
+      },
+      {
+        "id": "B",
+        "text": "Data drift"
+      },
+      {
+        "id": "C",
+        "text": "Overfitting"
+      },
+      {
+        "id": "D",
+        "text": "High bias"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "Data Box is a physical device for large-scale offline transfers."
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "Overfitting happens when a model learns training data too well but fails to generalize."
   },
   {
     "question_number": 28,
-    "question": "Which storage service provides SMB/NFS file shares mountable by Azure VMs and on-prem servers?",
+    "question": "What is the purpose of Amazon SageMaker Feature Store?",
     "options": [
-      { "id": "A", "text": "Blob Storage" },
-      { "id": "B", "text": "Azure Files" },
-      { "id": "C", "text": "Queue Storage" },
-      { "id": "D", "text": "Table Storage" }
+      {
+        "id": "A",
+        "text": "Manage IAM roles for training jobs"
+      },
+      {
+        "id": "B",
+        "text": "Store structured logs for model performance"
+      },
+      {
+        "id": "C",
+        "text": "Serve consistent features for training and inference"
+      },
+      {
+        "id": "D",
+        "text": "Replace Glue for visual data transformation"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "Azure Files supports SMB and NFS shares, accessible from VMs and on-prem."
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "Feature Store provides a centralized source for ML features used in both stages."
   },
   {
     "question_number": 29,
-    "question": "Which compute option is best for orchestrating many microservices with rolling updates?",
+    "question": "What is a key feature of the AWS Shared Responsibility Model as it applies to AI workloads?",
     "options": [
-      { "id": "A", "text": "Azure Container Instances" },
-      { "id": "B", "text": "Azure Kubernetes Service (AKS)" },
-      { "id": "C", "text": "App Service" },
-      { "id": "D", "text": "VM Scale Sets" }
+      {
+        "id": "A",
+        "text": "AWS is responsible for securing custom model code"
+      },
+      {
+        "id": "B",
+        "text": "Customers are responsible for physical data center access"
+      },
+      {
+        "id": "C",
+        "text": "AWS secures the infrastructure, customers secure configurations and data"
+      },
+      {
+        "id": "D",
+        "text": "Customers rely on AWS to guarantee model explainability"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "AKS manages container orchestration and rolling updates."
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "The Shared Responsibility Model splits infra vs user responsibilities."
   },
   {
     "question_number": 30,
-    "question": "Which service uses DNS-based global routing for apps across multiple regions?",
+    "question": "Which AWS tool enables human reviewers to verify low-confidence model predictions before results are finalized?",
     "options": [
-      { "id": "A", "text": "Azure Front Door" },
-      { "id": "B", "text": "Traffic Manager" },
-      { "id": "C", "text": "Load Balancer" },
-      { "id": "D", "text": "Application Gateway" }
+      {
+        "id": "A",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "B",
+        "text": "Amazon A2I"
+      },
+      {
+        "id": "C",
+        "text": "AWS Macie"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Q"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 3: Applications of Foundation Models",
     "correct_answer": "B",
-    "explanation": "Traffic Manager routes traffic globally using DNS resolution methods."
+    "explanation": "A2I (Augmented AI) lets humans review ML outputs before they are accepted. Q31. Which AWS service would you use to translate chatbot messages from English to Spanish in real-time? A) Amazon Comprehend B) Amazon Polly C) Amazon Translate D) Amazon Lex Q32. What is the main advantage of using Amazon SageMaker JumpStart for a new AI project? A) It provides serverless access to third-party models. B) It allows full model interpretability by default. C) It offers pre-built models and solutions for quick deployment. D) It replaces the need for IAM roles in ML workflows. Q33. Which method is commonly used to measure the similarity between user input and stored content in a vector database? A) Hash matching B) k-Nearest Neighbors (k-NN) C) Confusion matrix D) ROC curve Q34. What is an embedding in the context of AI and vector databases? A) A label used for supervised learning B) A data format used for model deployment C) A dense vector representing the meaning of data D) A specific GPU setting for SageMaker endpoints Q35. A model always predicts the majority class but fails to detect rare cases. What metric is most likely misleading in this case? A) Precision B) F1 Score C) Accuracy D) Recall Q36. What is the purpose of using SHAP values in model evaluation? A) To encrypt data before inference B) To calculate how each feature impacts a model's output C) To standardize tokenization of inputs D) To classify model bias as legal or illegal Q37. Which AWS service supports storing AI model outputs securely with version control and access logging? A) AWS Lambda B) AWS Glue C) Amazon S3 D) AWS CloudTrail Q38. What does Amazon Rekognition primarily analyze? A) Document structure B) Audio waveforms C) Image and video content D) Token-based language prompts Q39. How does Amazon Q for Business support enterprise AI use cases? A) By running real-time image recognition B) By providing GPU acceleration for model training C) By answering natural language questions using internal company data D) By launching distributed training jobs on SageMaker Q40. Which of the following defines prompt injection in generative AI applications? A) Feeding the model with missing values B) Tricking the model into executing unintended behavior via crafted input C) Replacing GPU memory during inference D) Automatically chaining model outputs to data pipelines"
   },
   {
     "question_number": 31,
-    "question": "How can you organize multiple subscriptions into a hierarchy for applying policies and RBAC?",
+    "question": "Which AWS service would you use to translate chatbot messages from English to Spanish in real-time?",
     "options": [
-      { "id": "A", "text": "Resource Groups" },
-      { "id": "B", "text": "Management Groups" },
-      { "id": "C", "text": "Tenants" },
-      { "id": "D", "text": "Blueprints" }
+      {
+        "id": "A",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Translate"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Lex"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "Management Groups allow grouping of multiple subscriptions for unified RBAC and policy assignment."
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "Translate provides real-time, high-quality language translation."
   },
   {
     "question_number": 32,
-    "question": "Which service lets you package templates, RBAC roles, and policies together for repeatable deployments?",
+    "question": "What is the main advantage of using Amazon SageMaker JumpStart for a new AI project?",
     "options": [
-      { "id": "A", "text": "Azure Policy" },
-      { "id": "B", "text": "Azure Blueprints" },
-      { "id": "C", "text": "Azure Advisor" },
-      { "id": "D", "text": "Resource Locks" }
+      {
+        "id": "A",
+        "text": "It provides serverless access to third-party models."
+      },
+      {
+        "id": "B",
+        "text": "It allows full model interpretability by default."
+      },
+      {
+        "id": "C",
+        "text": "It offers pre-built models and solutions for quick deployment."
+      },
+      {
+        "id": "D",
+        "text": "It replaces the need for IAM roles in ML workflows."
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "Blueprints combine templates, policies, and RBAC roles for consistent deployments."
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "JumpStart accelerates AI adoption by providing ready-to-use templates and models."
   },
   {
     "question_number": 33,
-    "question": "Which tool helps track and analyze past Azure spending?",
+    "question": "Which method is commonly used to measure the similarity between user input and stored content in a vector database?",
     "options": [
-      { "id": "A", "text": "Budgets" },
-      { "id": "B", "text": "Cost Analysis" },
-      { "id": "C", "text": "Pricing Calculator" },
-      { "id": "D", "text": "TCO Calculator" }
+      {
+        "id": "A",
+        "text": "Hash matching"
+      },
+      {
+        "id": "B",
+        "text": "k-Nearest Neighbors (k-NN)"
+      },
+      {
+        "id": "C",
+        "text": "Confusion matrix"
+      },
+      {
+        "id": "D",
+        "text": "ROC curve"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
+    "domain": "Domain 3: Applications of Foundation Models",
     "correct_answer": "B",
-    "explanation": "Cost Analysis shows historical spending patterns in Azure."
+    "explanation": "Vector search compares embeddings using k-NN for similarity ranking."
   },
   {
     "question_number": 34,
-    "question": "Which tool provides a browser-based shell with Azure CLI and PowerShell preinstalled?",
+    "question": "What is an embedding in the context of AI and vector databases?",
     "options": [
-      { "id": "A", "text": "Azure Portal" },
-      { "id": "B", "text": "Cloud Shell" },
-      { "id": "C", "text": "SSH to VM" },
-      { "id": "D", "text": "DevOps Agent" }
+      {
+        "id": "A",
+        "text": "A label used for supervised learning"
+      },
+      {
+        "id": "B",
+        "text": "A data format used for model deployment"
+      },
+      {
+        "id": "C",
+        "text": "A dense vector representing the meaning of data"
+      },
+      {
+        "id": "D",
+        "text": "A specific GPU setting for SageMaker endpoints"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "Cloud Shell is a browser-based shell with CLI and PowerShell preloaded."
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "Embeddings convert text/images into vectors for comparison and semantic search."
   },
   {
     "question_number": 35,
-    "question": "Which service provides a central log store and supports queries with KQL?",
+    "question": "A model always predicts the majority class but fails to detect rare cases. What metric is most likely misleading in this case?",
     "options": [
-      { "id": "A", "text": "Application Insights" },
-      { "id": "B", "text": "Log Analytics Workspace" },
-      { "id": "C", "text": "Service Health" },
-      { "id": "D", "text": "Azure Status" }
+      {
+        "id": "A",
+        "text": "Precision"
+      },
+      {
+        "id": "B",
+        "text": "F1 Score"
+      },
+      {
+        "id": "C",
+        "text": "Accuracy"
+      },
+      {
+        "id": "D",
+        "text": "Recall"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "Central log repository with query capabilities using KQL."
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "High accuracy can be misleading when rare classes are missed (i.e., imbalanced data)."
   },
   {
     "question_number": 36,
-    "question": "Which service is used to securely store and manage secrets, keys, and certificates?",
+    "question": "What is the purpose of using SHAP values in model evaluation?",
     "options": [
-      { "id": "A", "text": "Key Vault" },
-      { "id": "B", "text": "Defender for Cloud" },
-      { "id": "C", "text": "Microsoft Sentinel" },
-      { "id": "D", "text": "Azure AD" }
+      {
+        "id": "A",
+        "text": "To encrypt data before inference"
+      },
+      {
+        "id": "B",
+        "text": "To calculate how each feature impacts a model's output"
+      },
+      {
+        "id": "C",
+        "text": "To standardize tokenization of inputs"
+      },
+      {
+        "id": "D",
+        "text": "To classify model bias as legal or illegal"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "A",
-    "explanation": "Key Vault is the secure storage for secrets, encryption keys, and certificates."
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B",
+    "explanation": "SHAP values explain model predictions by showing feature contribution."
   },
   {
     "question_number": 37,
-    "question": "Which identity feature allows an app to connect to Azure resources without storing credentials?",
+    "question": "Which AWS service supports storing AI model outputs securely with version control and access logging?",
     "options": [
-      { "id": "A", "text": "External ID" },
-      { "id": "B", "text": "Managed Identity" },
-      { "id": "C", "text": "Shared Key" },
-      { "id": "D", "text": "Service Principal only" }
+      {
+        "id": "A",
+        "text": "AWS Lambda"
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "B",
-    "explanation": "Managed Identities allow apps to access services without managing secrets."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "S3 securely stores data, including models and logs, with versioning and access control."
   },
   {
     "question_number": 38,
-    "question": "Which service provides continuous security assessments and recommendations with a secure score?",
+    "question": "What does Amazon Rekognition primarily analyze?",
     "options": [
-      { "id": "A", "text": "Azure Monitor" },
-      { "id": "B", "text": "Microsoft Sentinel" },
-      { "id": "C", "text": "Defender for Cloud" },
-      { "id": "D", "text": "Azure Advisor" }
+      {
+        "id": "A",
+        "text": "Document structure"
+      },
+      {
+        "id": "B",
+        "text": "Audio waveforms"
+      },
+      {
+        "id": "C",
+        "text": "Image and video content"
+      },
+      {
+        "id": "D",
+        "text": "Token-based language prompts"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
+    "domain": "Domain 4: Guidelines for Responsible AI",
     "correct_answer": "C",
-    "explanation": "Defender for Cloud provides secure score, posture management, and recommendations."
+    "explanation": "Rekognition detects labels, faces, and unsafe content in media."
   },
   {
     "question_number": 39,
-    "question": "Which service lets you manage on-premises servers and Kubernetes clusters as if they were Azure resources?",
+    "question": "How does Amazon Q for Business support enterprise AI use cases?",
     "options": [
-      { "id": "A", "text": "Azure Arc" },
-      { "id": "B", "text": "Azure Migrate" },
-      { "id": "C", "text": "ExpressRoute" },
-      { "id": "D", "text": "Site-to-Site VPN" }
+      {
+        "id": "A",
+        "text": "By running real-time image recognition"
+      },
+      {
+        "id": "B",
+        "text": "By providing GPU acceleration for model training"
+      },
+      {
+        "id": "C",
+        "text": "By answering natural language questions using internal company data"
+      },
+      {
+        "id": "D",
+        "text": "By launching distributed training jobs on SageMaker"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
-    "correct_answer": "A",
-    "explanation": "Arc extends Azure management to non-Azure environments like on-premises servers."
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "C",
+    "explanation": "Amazon Q for Business is designed for internal Q&A across enterprise documents."
   },
   {
     "question_number": 40,
-    "question": "Which tool compares the 3-year cost of running workloads on-premises vs in Azure?",
+    "question": "Which of the following defines prompt injection in generative AI applications?",
     "options": [
-      { "id": "A", "text": "Pricing Calculator" },
-      { "id": "B", "text": "TCO Calculator" },
-      { "id": "C", "text": "Cost Analysis" },
-      { "id": "D", "text": "Budgets" }
+      {
+        "id": "A",
+        "text": "Feeding the model with missing values"
+      },
+      {
+        "id": "B",
+        "text": "Tricking the model into executing unintended behavior via crafted input"
+      },
+      {
+        "id": "C",
+        "text": "Replacing GPU memory during inference"
+      },
+      {
+        "id": "D",
+        "text": "Automatically chaining model outputs to data pipelines"
+      }
     ],
-    "domain": "Domain 3: Azure Management and Governance",
+    "domain": "Domain 5: Security, Compliance, and Governance",
     "correct_answer": "B",
-    "explanation": "The Total Cost of Ownership calculator estimates on-prem vs cloud costs over time."
+    "explanation": "Prompt injection exploits LLMs by injecting commands that override the intended prompt. Q41. Which AWS service can automate data transformations and prep for machine learning with a visual interface? A) AWS Glue DataBrew B) Amazon S3 C) Amazon Q D) Amazon Polly Q42. What is the purpose of a system prompt in a generative AI application? A) To define the format of the output B) To provide instructions that guide the model’s role or behavior C) To set GPU configuration D) To compress the input tokens Q43. Which AWS service would help detect data drift or anomalies in live model input and predictions? A) Amazon Rekognition B) SageMaker Model Monitor C) AWS Config D) Amazon Kendra Q44. An organization wants to classify documents by language and topic. Which combination of services is best? A) Amazon Polly and Amazon Textract B) Amazon Translate and Amazon S3 C) Amazon Comprehend and Amazon S3 D) Amazon Bedrock and Amazon Q Q45. Which type of model evaluation metric is most suitable for summarization tasks? A) ROUGE B) BLEU C) Perplexity D) MAE Q46. How does Amazon Bedrock simplify access to foundation models? A) It auto-trains any model uploaded by the user B) It hosts open-source models in SageMaker endpoints C) It provides API access to multiple foundation models without managing infrastructure D) It requires a local container environment for use Q47. What is the purpose of a vector database in Retrieval-Augmented Generation (RAG)? A) To reduce training time by compressing models B) To generate GPU-friendly model files C) To store embeddings and enable similarity search for grounding responses D) To support IAM token storage Q48. Which AWS tool enables ongoing audit tracking and policy alignment for AI projects? A) Amazon Q B) AWS Artifact C) AWS Audit Manager D) Amazon Comprehend Q49. What is the main purpose of Amazon Titan in the AWS AI ecosystem? A) It offers containerized GPU inference for local deployments B) It’s AWS’s proprietary foundation model family, accessible via Bedrock C) It provides OCR and handwriting recognition D) It’s an Amazon robotics platform for automation Q50. In what situation would using human-in-the-loop (via Amazon A2I) be most appropriate? A) To store model parameters in S3 B) When model outputs must be verified for accuracy before release C) When you want to increase token limits in Bedrock D) To convert speech to text"
   },
   {
     "question_number": 41,
-    "question": "Which NIST characteristic describes the ability to provision resources without human intervention?",
+    "question": "Which AWS service can automate data transformations and prep for machine learning with a visual interface?",
     "options": [
-      { "id": "A", "text": "On-demand self-service" },
-      { "id": "B", "text": "Broad network access" },
-      { "id": "C", "text": "Resource pooling" },
-      { "id": "D", "text": "Measured service" }
+      {
+        "id": "A",
+        "text": "AWS Glue DataBrew"
+      },
+      {
+        "id": "B",
+        "text": "Amazon S3"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Polly"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 5: Security, Compliance, and Governance",
     "correct_answer": "A",
-    "explanation": "On-demand self-service allows users to provision cloud resources automatically without provider interaction."
+    "explanation": "DataBrew lets users visually transform, clean, and prepare data for ML without code."
   },
   {
     "question_number": 42,
-    "question": "Public cloud is best described as:",
+    "question": "What is the purpose of a system prompt in a generative AI application?",
     "options": [
-      { "id": "A", "text": "Dedicated hardware for a single organization" },
-      { "id": "B", "text": "Shared infrastructure managed by a provider, accessed over the internet" },
-      { "id": "C", "text": "Running workloads across multiple providers" },
-      { "id": "D", "text": "An on-premises private datacenter" }
+      {
+        "id": "A",
+        "text": "To define the format of the output"
+      },
+      {
+        "id": "B",
+        "text": "To provide instructions that guide the model’s role or behavior"
+      },
+      {
+        "id": "C",
+        "text": "To set GPU configuration"
+      },
+      {
+        "id": "D",
+        "text": "To compress the input tokens"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 1: Fundamentals of AI and ML",
     "correct_answer": "B",
-    "explanation": "Public cloud is hosted by the provider and shared among multiple tenants, accessible via the internet."
+    "explanation": "System prompts establish tone, behavior, and rules for the AI’s responses."
   },
   {
     "question_number": 43,
-    "question": "Which of the following is a SaaS solution?",
+    "question": "Which AWS service would help detect data drift or anomalies in live model input and predictions?",
     "options": [
-      { "id": "A", "text": "Azure SQL Database" },
-      { "id": "B", "text": "Azure Virtual Machines" },
-      { "id": "C", "text": "Microsoft 365" },
-      { "id": "D", "text": "Azure App Service" }
+      {
+        "id": "A",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "B",
+        "text": "SageMaker Model Monitor"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Kendra"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "C",
-    "explanation": "Microsoft 365 is SaaS — the provider manages everything except data usage and access."
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "B",
+    "explanation": "Model Monitor tracks model inputs and outputs for drift, helping detect issues post-deployment."
   },
   {
     "question_number": 44,
-    "question": "What does Zero Trust mean?",
+    "question": "An organization wants to classify documents by language and topic. Which combination of services is best?",
     "options": [
-      { "id": "A", "text": "Trust all devices on the corporate network" },
-      { "id": "B", "text": "Trust but verify" },
-      { "id": "C", "text": "Never trust, always verify" },
-      { "id": "D", "text": "MFA is optional" }
+      {
+        "id": "A",
+        "text": "Amazon Polly and Amazon Textract"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Translate and Amazon S3"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Comprehend and Amazon S3"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Bedrock and Amazon Q"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
+    "domain": "Domain 5: Security, Compliance, and Governance",
     "correct_answer": "C",
-    "explanation": "Zero Trust assumes no device or user is inherently trusted; verification is always required."
+    "explanation": "Comprehend analyzes text for language and topic classification; S3 stores the documents."
   },
   {
     "question_number": 45,
-    "question": "Placing resources in Azure regions closest to end users primarily improves:",
+    "question": "Which type of model evaluation metric is most suitable for summarization tasks?",
     "options": [
-      { "id": "A", "text": "High availability" },
-      { "id": "B", "text": "Global reach and lower latency" },
-      { "id": "C", "text": "Cost efficiency" },
-      { "id": "D", "text": "Governance" }
+      {
+        "id": "A",
+        "text": "ROUGE"
+      },
+      {
+        "id": "B",
+        "text": "BLEU"
+      },
+      {
+        "id": "C",
+        "text": "Perplexity"
+      },
+      {
+        "id": "D",
+        "text": "MAE"
+      }
     ],
-    "domain": "Domain 1: Cloud Concepts",
-    "correct_answer": "B",
-    "explanation": "Deploying resources close to users reduces latency and improves global availability."
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "A",
+    "explanation": "ROUGE compares overlaps between generated and reference summaries."
   },
   {
     "question_number": 46,
-    "question": "Azure Front Door is primarily used for:",
+    "question": "How does Amazon Bedrock simplify access to foundation models?",
     "options": [
-      { "id": "A", "text": "DNS-level global routing" },
-      { "id": "B", "text": "Global HTTP acceleration and edge routing with WAF" },
-      { "id": "C", "text": "Site-to-site private connectivity" },
-      { "id": "D", "text": "L4 TCP distribution inside a VNet" }
+      {
+        "id": "A",
+        "text": "It auto-trains any model uploaded by the user"
+      },
+      {
+        "id": "B",
+        "text": "It hosts open-source models in SageMaker endpoints"
+      },
+      {
+        "id": "C",
+        "text": "It provides API access to multiple foundation models without managing"
+      },
+      {
+        "id": "D",
+        "text": "It requires a local container environment for use"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "Azure Front Door accelerates HTTP traffic globally and includes WAF for security."
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Bedrock is a managed service that provides simple access to FMs from various providers."
   },
   {
     "question_number": 47,
-    "question": "Which Azure service is best for building simple APIs that scale and are billed per execution?",
+    "question": "What is the purpose of a vector database in Retrieval-Augmented Generation (RAG)?",
     "options": [
-      { "id": "A", "text": "App Service" },
-      { "id": "B", "text": "Azure Functions" },
-      { "id": "C", "text": "AKS" },
-      { "id": "D", "text": "Container Instances" }
+      {
+        "id": "A",
+        "text": "To reduce training time by compressing models"
+      },
+      {
+        "id": "B",
+        "text": "To generate GPU-friendly model files"
+      },
+      {
+        "id": "C",
+        "text": "To store embeddings and enable similarity search for grounding responses"
+      },
+      {
+        "id": "D",
+        "text": "To support IAM token storage"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "B",
-    "explanation": "Functions are serverless and billed only when triggered, ideal for lightweight APIs."
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Vector databases hold embeddings to support retrieval in RAG workflows."
   },
   {
     "question_number": 48,
-    "question": "Which service provides secure RDP/SSH access to VMs without exposing public IPs?",
+    "question": "Which AWS tool enables ongoing audit tracking and policy alignment for AI projects?",
     "options": [
-      { "id": "A", "text": "Azure Bastion" },
-      { "id": "B", "text": "NAT Gateway" },
-      { "id": "C", "text": "Jumpbox VM with public IP" },
-      { "id": "D", "text": "NSG inbound rule" }
+      {
+        "id": "A",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "id": "C",
+        "text": "AWS Audit Manager"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Comprehend"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
-    "correct_answer": "A",
-    "explanation": "Bastion provides secure RDP/SSH sessions through the portal without public IPs."
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "Audit Manager helps you map and maintain compliance controls for audit readiness."
   },
   {
     "question_number": 49,
-    "question": "Which compute option offers the lowest cost for workloads that can be interrupted at any time?",
+    "question": "What is the main purpose of Amazon Titan in the AWS AI ecosystem?",
     "options": [
-      { "id": "A", "text": "Reserved VM" },
-      { "id": "B", "text": "Spot VM" },
-      { "id": "C", "text": "Pay-as-you-go VM" },
-      { "id": "D", "text": "Dedicated Host" }
+      {
+        "id": "A",
+        "text": "It offers containerized GPU inference for local deployments"
+      },
+      {
+        "id": "B",
+        "text": "It’s AWS’s proprietary foundation model family, accessible via Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "It provides OCR and handwriting recognition"
+      },
+      {
+        "id": "D",
+        "text": "It’s an Amazon robotics platform for automation"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 4: Guidelines for Responsible AI",
     "correct_answer": "B",
-    "explanation": "Spot VMs are low-cost but can be evicted at any time, ideal for interruptible workloads."
+    "explanation": "Titan models support generative AI use cases and are natively integrated with Bedrock."
   },
   {
     "question_number": 50,
-    "question": "Which tool enables high-speed command-line transfers to and from Azure Storage?",
+    "question": "In what situation would using human-in-the-loop (via Amazon A2I) be most appropriate?",
     "options": [
-      { "id": "A", "text": "Storage Explorer" },
-      { "id": "B", "text": "AzCopy" },
-      { "id": "C", "text": "Portal upload" },
-      { "id": "D", "text": "Power BI" }
+      {
+        "id": "A",
+        "text": "To store model parameters in S3"
+      },
+      {
+        "id": "B",
+        "text": "When model outputs must be verified for accuracy before release"
+      },
+      {
+        "id": "C",
+        "text": "When you want to increase token limits in Bedrock"
+      },
+      {
+        "id": "D",
+        "text": "To convert speech to text"
+      }
     ],
-    "domain": "Domain 2: Azure Architecture and Services",
+    "domain": "Domain 3: Applications of Foundation Models",
     "correct_answer": "B",
-    "explanation": "AzCopy is a command-line utility optimized for fast data transfers to and from Azure Storage."
+    "explanation": "Amazon A2I allows for human intervention to validate or correct AI results. Q51. What is the benefit of using Amazon SageMaker Studio for AI development? A) It replaces IAM permissions B) It offers a browser-based IDE with integrated ML tools C) It automatically generates prompts for Bedrock D) It converts images to embeddings Q52. Which AWS service would best support training and deploying a machine learning model with custom Python code? A) Amazon Lex B) Amazon SageMaker C) Amazon Translate D) Amazon Polly Q53. A company wants to track changes in model performance over time. What AWS service helps with this? A) Amazon Textract B) SageMaker Model Monitor C) Amazon Lex D) Amazon Transcribe Q54. Which of the following AWS services provides an interface to manage and govern data shared across teams? A) AWS IAM B) Amazon Macie C) Amazon DataZone D) Amazon Translate Q55. What is the main benefit of using Amazon Comprehend’s custom classification feature? A) It allows training of vision models on image datasets B) It enables model quantization for faster inference C) It lets you categorize documents based on your own business labels D) It encrypts output summaries for compliance Q56. Which of the following best defines \"zero-shot prompting\"? A) The model is fine-tuned before inference B) The model answers a task without seeing any examples C) The model is prompted after receiving labeled training data D) The prompt contains multiple few-shot examples Q57. What is a major advantage of using Amazon Q (Business) over a general LLM interface? A) It supports GPU-based training workloads B) It automatically clusters training data C) It grounds answers in enterprise documents and internal knowledge D) It supports image classification natively Q58. Which AWS service provides a knowledge base-backed AI chatbot using Bedrock models and RAG? A) Amazon Lex B) Amazon Rekognition C) Amazon Q D) Amazon S3 Q59. A security team wants to ensure AI data in S3 is encrypted at rest. Which AWS service helps manage encryption keys? A) Amazon A2I B) AWS Artifact C) AWS KMS D) Amazon Bedrock Q60. What is the benefit of using Guardrails in Amazon Bedrock? A) To detect and prevent drift in training pipelines B) To convert structured data into image format C) To restrict harmful, unsafe, or non-compliant model outputs D) To perform live speech translation"
+  },
+  {
+    "question_number": 51,
+    "question": "What is the benefit of using Amazon SageMaker Studio for AI development?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It replaces IAM permissions"
+      },
+      {
+        "id": "B",
+        "text": "It offers a browser-based IDE with integrated ML tools"
+      },
+      {
+        "id": "C",
+        "text": "It automatically generates prompts for Bedrock"
+      },
+      {
+        "id": "D",
+        "text": "It converts images to embeddings"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "B",
+    "explanation": "SageMaker Studio centralizes data science workflows with Jupyter notebooks and built-in tools."
+  },
+  {
+    "question_number": 52,
+    "question": "Which AWS service would best support training and deploying a machine learning model with custom Python code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SageMaker"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Translate"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Polly"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "B",
+    "explanation": "SageMaker supports bringing your own code and containers for ML model training and deployment."
+  },
+  {
+    "question_number": 53,
+    "question": "A company wants to track changes in model performance over time. What AWS service helps with this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Textract"
+      },
+      {
+        "id": "B",
+        "text": "SageMaker Model Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Transcribe"
+      }
+    ],
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "B",
+    "explanation": "Tracks prediction quality and input distribution over time to identify drift or degradation."
+  },
+  {
+    "question_number": 54,
+    "question": "Which of the following AWS services provides an interface to manage and govern data shared across teams?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS IAM"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "C",
+        "text": "Amazon DataZone"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Translate"
+      }
+    ],
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "DataZone supports cataloging, sharing, and governance of datasets across teams."
+  },
+  {
+    "question_number": 55,
+    "question": "What is the main benefit of using Amazon Comprehend’s custom classification feature?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It allows training of vision models on image datasets"
+      },
+      {
+        "id": "B",
+        "text": "It enables model quantization for faster inference"
+      },
+      {
+        "id": "C",
+        "text": "It lets you categorize documents based on your own business labels"
+      },
+      {
+        "id": "D",
+        "text": "It encrypts output summaries for compliance"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Comprehend custom classification lets you train a classifier on your own label taxonomy."
+  },
+  {
+    "question_number": 56,
+    "question": "Which of the following best defines \"zero-shot prompting\"?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The model is fine-tuned before inference"
+      },
+      {
+        "id": "B",
+        "text": "The model answers a task without seeing any examples"
+      },
+      {
+        "id": "C",
+        "text": "The model is prompted after receiving labeled training data"
+      },
+      {
+        "id": "D",
+        "text": "The prompt contains multiple few-shot examples"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "B",
+    "explanation": "Zero-shot prompting relies on pretrained capabilities and instructions alone."
+  },
+  {
+    "question_number": 57,
+    "question": "What is a major advantage of using Amazon Q (Business) over a general LLM interface?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It supports GPU-based training workloads"
+      },
+      {
+        "id": "B",
+        "text": "It automatically clusters training data"
+      },
+      {
+        "id": "C",
+        "text": "It grounds answers in enterprise documents and internal knowledge"
+      },
+      {
+        "id": "D",
+        "text": "It supports image classification natively"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Amazon Q uses RAG to answer based on your company's data."
+  },
+  {
+    "question_number": 58,
+    "question": "Which AWS service provides a knowledge base-backed AI chatbot using Bedrock models and RAG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Q integrates Bedrock models with internal data sources for grounded, enterprise chat."
+  },
+  {
+    "question_number": 59,
+    "question": "A security team wants to ensure AI data in S3 is encrypted at rest. Which AWS service helps manage encryption keys?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon A2I"
+      },
+      {
+        "id": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "id": "C",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Bedrock"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Key Management Service handles encryption key creation, storage, and access."
+  },
+  {
+    "question_number": 60,
+    "question": "What is the benefit of using Guardrails in Amazon Bedrock?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To detect and prevent drift in training pipelines"
+      },
+      {
+        "id": "B",
+        "text": "To convert structured data into image format"
+      },
+      {
+        "id": "C",
+        "text": "To restrict harmful, unsafe, or non-compliant model outputs"
+      },
+      {
+        "id": "D",
+        "text": "To perform live speech translation"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Bedrock Guardrails filter and control generative model responses based on safety rules. Q61. Which AWS service is specifically designed to help build, test, and deploy AI solutions using an end-to-end managed environment? A) Amazon Textract B) Amazon Q C) Amazon SageMaker D) AWS Lambda Q62. What is the main reason organizations use Retrieval-Augmented Generation (RAG) instead of relying only on a foundation model’s internal knowledge? A) It reduces GPU power requirements B) It improves model explainability C) It enables grounding in up-to-date or proprietary information D) It increases BLEU score in translation tasks Q63. In a classification model, which metric is most useful when trying to reduce false negatives in rare event detection? A) Accuracy B) Recall C) BLEU D) MAE Q64. What does a model card typically include? (Choose TWO.) A) GPU utilization metrics B) Intended use cases C) Dataset details and sources D) Token cost per query Q65. Which AWS service helps prevent unauthorized access to AI endpoints by controlling permissions? A) AWS IAM B) Amazon Translate C) Amazon Polly D) Amazon CloudWatch Q66. What is one reason to use prompt engineering instead of fine-tuning? A) It reduces latency B) It allows reuse of the same model without additional training C) It guarantees full explainability D) It converts model outputs into tokens Q67. Which AWS service is best suited for real-time speech-to-text transcription? A) Amazon Transcribe B) Amazon Lex C) Amazon Polly D) Amazon Kendra Q68. A team wants to perform image analysis, including detecting objects and facial attributes. Which service should they use? A) Amazon Bedrock B) Amazon Comprehend C) Amazon Rekognition D) Amazon A2I Q69. What is the main risk of not monitoring model inputs after deployment? A) GPU underuse B) Increased training cost C) Input drift leading to degraded model performance D) Longer prompt tokenization Q70. What AWS feature supports safe handling of sensitive prompts and outputs in generative AI applications? A) SageMaker Model Cards B) Amazon Macie C) Bedrock Guardrails D) AWS CodeCommit"
+  },
+  {
+    "question_number": 61,
+    "question": "Which AWS service is specifically designed to help build, test, and deploy AI solutions using an end-to-end managed environment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Textract"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "C",
+        "text": "Amazon SageMaker"
+      },
+      {
+        "id": "D",
+        "text": "AWS Lambda"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "SageMaker provides a complete ML platform for model building, training, and deployment."
+  },
+  {
+    "question_number": 62,
+    "question": "What is the main reason organizations use Retrieval-Augmented Generation (RAG) instead of relying only on a foundation model’s internal knowledge?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It reduces GPU power requirements"
+      },
+      {
+        "id": "B",
+        "text": "It improves model explainability"
+      },
+      {
+        "id": "C",
+        "text": "It enables grounding in up-to-date or proprietary information"
+      },
+      {
+        "id": "D",
+        "text": "It increases BLEU score in translation tasks"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "C",
+    "explanation": "RAG lets the model reference external documents for current or custom data."
+  },
+  {
+    "question_number": 63,
+    "question": "In a classification model, which metric is most useful when trying to reduce false negatives in rare event detection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accuracy"
+      },
+      {
+        "id": "B",
+        "text": "Recall"
+      },
+      {
+        "id": "C",
+        "text": "BLEU"
+      },
+      {
+        "id": "D",
+        "text": "MAE"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "B",
+    "explanation": "Recall focuses on capturing true positives — critical when false negatives are costly."
+  },
+  {
+    "question_number": 64,
+    "question": "What does a model card typically include? (Choose TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "GPU utilization metrics"
+      },
+      {
+        "id": "B",
+        "text": "Intended use cases"
+      },
+      {
+        "id": "C",
+        "text": "Dataset details and sources"
+      },
+      {
+        "id": "D",
+        "text": "Token cost per query"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B, C",
+    "explanation": "Model cards document purpose, data origin, performance, and limitations."
+  },
+  {
+    "question_number": 65,
+    "question": "Which AWS service helps prevent unauthorized access to AI endpoints by controlling permissions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS IAM"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Translate"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "D",
+        "text": "Amazon CloudWatch"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "A",
+    "explanation": "IAM enforces fine-grained access control to AI resources like Bedrock endpoints."
+  },
+  {
+    "question_number": 66,
+    "question": "What is one reason to use prompt engineering instead of fine-tuning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It reduces latency"
+      },
+      {
+        "id": "B",
+        "text": "It allows reuse of the same model without additional training"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees full explainability"
+      },
+      {
+        "id": "D",
+        "text": "It converts model outputs into tokens"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "B",
+    "explanation": "Prompt engineering lets you tailor outputs with no retraining or cost overhead."
+  },
+  {
+    "question_number": 67,
+    "question": "Which AWS service is best suited for real-time speech-to-text transcription?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Transcribe"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Kendra"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "A",
+    "explanation": "Transcribe converts live or recorded speech into accurate text."
+  },
+  {
+    "question_number": 68,
+    "question": "A team wants to perform image analysis, including detecting objects and facial attributes. Which service should they use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "D",
+        "text": "Amazon A2I"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "C",
+    "explanation": "Rekognition analyzes images and videos for faces, objects, and text."
+  },
+  {
+    "question_number": 69,
+    "question": "What is the main risk of not monitoring model inputs after deployment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GPU underuse"
+      },
+      {
+        "id": "B",
+        "text": "Increased training cost"
+      },
+      {
+        "id": "C",
+        "text": "Input drift leading to degraded model performance"
+      },
+      {
+        "id": "D",
+        "text": "Longer prompt tokenization"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "If input data shifts from what the model was trained on, accuracy may drop."
+  },
+  {
+    "question_number": 70,
+    "question": "What AWS feature supports safe handling of sensitive prompts and outputs in generative AI applications?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SageMaker Model Cards"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "C",
+        "text": "Bedrock Guardrails"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeCommit"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Guardrails help filter and manage prompts and outputs for compliance and safety. Q71. What AWS service enables access to pre-trained models from Anthropic, Stability AI, and AI21 Labs? A) Amazon SageMaker B) Amazon Bedrock C) Amazon Comprehend D) Amazon EC2 Q72. What is a foundational concept of human-centered design in AI systems? A) Reducing memory usage in training B) Prioritizing GPU acceleration C) Explaining outputs in a way users can understand D) Minimizing vector database usage Q73. Which AWS service is primarily used to manage machine learning features and avoid duplication between training and inference? A) AWS Glue B) Amazon S3 C) SageMaker Feature Store D) Amazon Lex Q74. An organization wants to control how long ML data is retained and ensure deletion after a specific period. Which feature helps? A) S3 Bucket Lifecycle Policies B) Amazon Lex intents C) AWS Lambda D) SageMaker model tuning Q75. What is the purpose of Amazon A2I in AI workflows? A) Create multi-modal embeddings for large models B) Allow human review of low-confidence or sensitive ML predictions C) Accelerate foundation model training D) Detect personally identifiable information in documents Q76. What does BLEU score evaluate in NLP tasks? A) Output tone B) Model inference time C) Translation accuracy based on reference overlap D) Ethical use of AI Q77. Which AWS service provides compliance documentation (e.g., SOC, ISO certifications)? A) AWS CloudTrail B) AWS Artifact C) Amazon Rekognition D) Amazon S3 Q78. A financial company wants to trace which dataset was used to train a particular ML model. Which governance tool supports this need? A) Amazon Polly B) Amazon Translate C) Model Cards D) Amazon Kendra Q79. What is latent space in the context of foundation models? A) A model’s reserved memory area B) A range of GPU utilization values C) A compressed internal representation of features or concepts D) A multi-user chat interface for AI responses Q80. Which AWS service would best support a chatbot that needs to understand spoken commands and reply with generated speech? A) Amazon Textract B) Amazon Q C) Amazon Transcribe + Amazon Polly D) Amazon Comprehend + Amazon S3"
+  },
+  {
+    "question_number": 71,
+    "question": "What AWS service enables access to pre-trained models from Anthropic, Stability AI, and AI21 Labs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SageMaker"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "D",
+        "text": "Amazon EC2"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "B",
+    "explanation": "Bedrock provides access to foundation models from multiple providers via API."
+  },
+  {
+    "question_number": 72,
+    "question": "What is a foundational concept of human-centered design in AI systems?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducing memory usage in training"
+      },
+      {
+        "id": "B",
+        "text": "Prioritizing GPU acceleration"
+      },
+      {
+        "id": "C",
+        "text": "Explaining outputs in a way users can understand"
+      },
+      {
+        "id": "D",
+        "text": "Minimizing vector database usage"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "Human-centered design emphasizes clarity, trust, and user comprehension."
+  },
+  {
+    "question_number": 73,
+    "question": "Which AWS service is primarily used to manage machine learning features and avoid duplication between training and inference?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Glue"
+      },
+      {
+        "id": "B",
+        "text": "Amazon S3"
+      },
+      {
+        "id": "C",
+        "text": "SageMaker Feature Store"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Lex"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "Stores and serves features consistently across ML pipelines."
+  },
+  {
+    "question_number": 74,
+    "question": "An organization wants to control how long ML data is retained and ensure deletion after a specific period. Which feature helps?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Lifecycle Policies"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Lex intents"
+      },
+      {
+        "id": "C",
+        "text": "AWS Lambda"
+      },
+      {
+        "id": "D",
+        "text": "SageMaker model tuning"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "A",
+    "explanation": "These automate data archiving and deletion for governance and compliance."
+  },
+  {
+    "question_number": 75,
+    "question": "What is the purpose of Amazon A2I in AI workflows?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create multi-modal embeddings for large models"
+      },
+      {
+        "id": "B",
+        "text": "Allow human review of low-confidence or sensitive ML predictions"
+      },
+      {
+        "id": "C",
+        "text": "Accelerate foundation model training"
+      },
+      {
+        "id": "D",
+        "text": "Detect personally identifiable information in documents"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B",
+    "explanation": "A2I adds human-in-the-loop validation to critical model decisions."
+  },
+  {
+    "question_number": 76,
+    "question": "What does BLEU score evaluate in NLP tasks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Output tone"
+      },
+      {
+        "id": "B",
+        "text": "Model inference time"
+      },
+      {
+        "id": "C",
+        "text": "Translation accuracy based on reference overlap"
+      },
+      {
+        "id": "D",
+        "text": "Ethical use of AI"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "BLEU measures how closely machine translation matches a human reference."
+  },
+  {
+    "question_number": 77,
+    "question": "Which AWS service provides compliance documentation (e.g., SOC, ISO certifications)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "B",
+    "explanation": "Provides downloadable compliance and security documents."
+  },
+  {
+    "question_number": 78,
+    "question": "A financial company wants to trace which dataset was used to train a particular ML model. Which governance tool supports this need?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Translate"
+      },
+      {
+        "id": "C",
+        "text": "Model Cards"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Kendra"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "C",
+    "explanation": "Document model inputs, training data, use cases, and limitations."
+  },
+  {
+    "question_number": 79,
+    "question": "What is latent space in the context of foundation models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A model’s reserved memory area"
+      },
+      {
+        "id": "B",
+        "text": "A range of GPU utilization values"
+      },
+      {
+        "id": "C",
+        "text": "A compressed internal representation of features or concepts"
+      },
+      {
+        "id": "D",
+        "text": "A multi-user chat interface for AI responses"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Foundation models use latent space to understand and relate input data."
+  },
+  {
+    "question_number": 80,
+    "question": "Which AWS service would best support a chatbot that needs to understand spoken commands and reply with generated speech?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Textract"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Transcribe + Amazon Polly"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Comprehend + Amazon S3"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Transcribe converts speech to text; Polly converts generated replies into audio. Q81. Which AWS service helps you define custom vocabulary and language models for speech recognition tasks? A) Amazon Translate B) Amazon Polly C) Amazon Transcribe D) Amazon Kendra Q82. What does the Shared Responsibility Model mean in the context of AWS AI services? A) AWS and users co-own model weights B) AWS handles physical security; users manage data, configuration, and access C) AWS manages all aspects of AI, including ethics D) Users only manage billing and logs Q83. Which tool would help a company detect bias in both datasets and model predictions? A) Amazon Comprehend B) SageMaker Clarify C) AWS Glue D) Amazon Bedrock Q84. Why might an organization use continuous pretraining with foundation models? A) To delete unused tokens B) To keep the model updated with recent data C) To reset model weights D) To avoid needing GPUs Q85. What is the function of instruction tuning in foundation models? A) Adjusts latency parameters B) Teaches the model to better follow user commands C) Converts binary to text D) Optimizes GPU memory Q86. Which AWS service supports chunking text input and adding grounding context for large prompts? A) Amazon Lex B) Amazon Comprehend C) Amazon Bedrock D) AWS Lambda Q87. Which term best describes the risk of a model memorizing and reproducing training data verbatim? A) Overfitting B) Latency C) Prompt injection D) Token duplication Q88. An AI assistant produces different responses each time for the same prompt. What parameter is likely causing this? A) Accuracy B) Recall C) Temperature D) Latency Q89. In responsible AI development, what is one purpose of using model explainability tools? A) To reduce GPU usage B) To measure token frequency C) To help understand feature impact on model predictions D) To optimize latency in real-time endpoints Q90. A company needs to prevent public access to its SageMaker inference endpoints. What should it use? A) Public API Gateway B) Amazon Macie C) AWS PrivateLink D) Amazon Polly"
+  },
+  {
+    "question_number": 81,
+    "question": "Which AWS service helps you define custom vocabulary and language models for speech recognition tasks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Translate"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Transcribe"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Kendra"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Transcribe supports custom vocabularies and language models for tailored speech recognition."
+  },
+  {
+    "question_number": 82,
+    "question": "What does the Shared Responsibility Model mean in the context of AWS AI services?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS and users co-own model weights"
+      },
+      {
+        "id": "B",
+        "text": "AWS handles physical security; users manage data, configuration, and access"
+      },
+      {
+        "id": "C",
+        "text": "AWS manages all aspects of AI, including ethics"
+      },
+      {
+        "id": "D",
+        "text": "Users only manage billing and logs"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "B",
+    "explanation": "The Shared Responsibility Model divides control between AWS (infra) and the customer (data, permissions, models)."
+  },
+  {
+    "question_number": 83,
+    "question": "Which tool would help a company detect bias in both datasets and model predictions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "B",
+        "text": "SageMaker Clarify"
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Bedrock"
+      }
+    ],
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "B",
+    "explanation": "Clarify detects bias and provides SHAP-based explainability during and after training."
+  },
+  {
+    "question_number": 84,
+    "question": "Why might an organization use continuous pretraining with foundation models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To delete unused tokens"
+      },
+      {
+        "id": "B",
+        "text": "To keep the model updated with recent data"
+      },
+      {
+        "id": "C",
+        "text": "To reset model weights"
+      },
+      {
+        "id": "D",
+        "text": "To avoid needing GPUs"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B",
+    "explanation": "Continuous pretraining extends a model’s knowledge beyond its original training cutoff."
+  },
+  {
+    "question_number": 85,
+    "question": "What is the function of instruction tuning in foundation models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adjusts latency parameters"
+      },
+      {
+        "id": "B",
+        "text": "Teaches the model to better follow user commands"
+      },
+      {
+        "id": "C",
+        "text": "Converts binary to text"
+      },
+      {
+        "id": "D",
+        "text": "Optimizes GPU memory"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B",
+    "explanation": "Instruction tuning helps models learn to respond well to prompts phrased as instructions."
+  },
+  {
+    "question_number": 86,
+    "question": "Which AWS service supports chunking text input and adding grounding context for large prompts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "D",
+        "text": "AWS Lambda"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Bedrock supports prompt engineering, chunking, and RAG for grounding context."
+  },
+  {
+    "question_number": 87,
+    "question": "Which term best describes the risk of a model memorizing and reproducing training data verbatim?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overfitting"
+      },
+      {
+        "id": "B",
+        "text": "Latency"
+      },
+      {
+        "id": "C",
+        "text": "Prompt injection"
+      },
+      {
+        "id": "D",
+        "text": "Token duplication"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "A",
+    "explanation": "Overfitting can cause models to memorize training data instead of generalizing."
+  },
+  {
+    "question_number": 88,
+    "question": "An AI assistant produces different responses each time for the same prompt. What parameter is likely causing this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accuracy"
+      },
+      {
+        "id": "B",
+        "text": "Recall"
+      },
+      {
+        "id": "C",
+        "text": "Temperature"
+      },
+      {
+        "id": "D",
+        "text": "Latency"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Higher temperature adds randomness to model output, affecting determinism."
+  },
+  {
+    "question_number": 89,
+    "question": "In responsible AI development, what is one purpose of using model explainability tools?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To reduce GPU usage"
+      },
+      {
+        "id": "B",
+        "text": "To measure token frequency"
+      },
+      {
+        "id": "C",
+        "text": "To help understand feature impact on model predictions"
+      },
+      {
+        "id": "D",
+        "text": "To optimize latency in real-time endpoints"
+      }
+    ],
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "C",
+    "explanation": "Explainability helps interpret why the model made a certain prediction."
+  },
+  {
+    "question_number": 90,
+    "question": "A company needs to prevent public access to its SageMaker inference endpoints. What should it use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Public API Gateway"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "C",
+        "text": "AWS PrivateLink"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Polly"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "PrivateLink allows private, VPC-internal access to SageMaker and Bedrock endpoints. Q91. What is the role of Amazon Kendra in a Retrieval-Augmented Generation (RAG) pipeline? A) Train a new foundation model from scratch B) Manage cloud cost for AI pipelines C) Retrieve relevant documents or passages from a data source D) Generate embeddings from images Q92. Which of the following is a typical component of a RAG system on AWS? (Choose TWO.) A) Amazon Bedrock B) Amazon Textract C) Amazon OpenSearch D) AWS CodePipeline Q93. What AWS service provides a no-code interface for creating apps powered by Bedrock foundation models? A) Amazon Rekognition B) Amazon Lex C) Amazon Q D) Amazon PartyRock Q94. What type of learning uses labeled input-output pairs to train a model? A) Reinforcement learning B) Supervised learning C) Unsupervised learning D) Federated learning Q95. Which AWS service allows users to transcribe streaming audio with speaker identification? A) Amazon Polly B) Amazon Transcribe C) Amazon Comprehend D) Amazon SageMaker Q96. Why would an AI team use AWS Config in an ML pipeline? A) To build no-code AI assistants B) To validate prompts for Bedrock C) To monitor compliance of infrastructure configurations D) To perform model hyperparameter tuning Q97. Which type of bias occurs when the training dataset does not represent the target population? A) Algorithmic bias B) Data drift C) Sampling bias D) Tuning bias Q98. What is one limitation of few-shot prompting compared to fine-tuning? A) It requires GPU access B) It needs a full labeled dataset C) It has limited task-specific learning retention D) It supports only classification models Q99. A company needs to host a multilingual question-answering chatbot using proprietary documentation. Which combination is best? A) Amazon Translate + Amazon S3 B) Amazon Kendra + Amazon Bedrock C) Amazon Polly + AWS Lambda D) AWS Glue + Amazon SageMaker Q100. Which AWS service allows teams to detect and redact sensitive data from documents or text inputs before model training? A) Amazon Bedrock B) Amazon Rekognition C) Amazon Macie D) Amazon Comprehend"
+  },
+  {
+    "question_number": 91,
+    "question": "What is the role of Amazon Kendra in a Retrieval-Augmented Generation (RAG) pipeline?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Train a new foundation model from scratch"
+      },
+      {
+        "id": "B",
+        "text": "Manage cloud cost for AI pipelines"
+      },
+      {
+        "id": "C",
+        "text": "Retrieve relevant documents or passages from a data source"
+      },
+      {
+        "id": "D",
+        "text": "Generate embeddings from images"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "C",
+    "explanation": "Kendra is used to search and retrieve documents based on semantic or keyword relevance."
+  },
+  {
+    "question_number": 92,
+    "question": "Which of the following is a typical component of a RAG system on AWS? (Choose TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Textract"
+      },
+      {
+        "id": "C",
+        "text": "Amazon OpenSearch"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodePipeline"
+      }
+    ],
+    "domain": "Domain 4: Guidelines for Responsible AI",
+    "correct_answer": "A, C",
+    "explanation": "Bedrock provides the generative model; OpenSearch stores embeddings for vector search in RAG."
+  },
+  {
+    "question_number": 93,
+    "question": "What AWS service provides a no-code interface for creating apps powered by Bedrock foundation models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Q"
+      },
+      {
+        "id": "D",
+        "text": "Amazon PartyRock"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "D",
+    "explanation": "PartyRock is a no-code app builder that uses Bedrock models to build generative AI apps."
+  },
+  {
+    "question_number": 94,
+    "question": "What type of learning uses labeled input-output pairs to train a model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reinforcement learning"
+      },
+      {
+        "id": "B",
+        "text": "Supervised learning"
+      },
+      {
+        "id": "C",
+        "text": "Unsupervised learning"
+      },
+      {
+        "id": "D",
+        "text": "Federated learning"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "B",
+    "explanation": "Supervised learning uses labeled input-output pairs to learn mappings."
+  },
+  {
+    "question_number": 95,
+    "question": "Which AWS service allows users to transcribe streaming audio with speaker identification?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Transcribe"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "D",
+        "text": "Amazon SageMaker"
+      }
+    ],
+    "domain": "Domain 3: Applications of Foundation Models",
+    "correct_answer": "B",
+    "explanation": "Transcribe can transcribe speech with features like speaker identification and vocabulary filtering."
+  },
+  {
+    "question_number": 96,
+    "question": "Why would an AI team use AWS Config in an ML pipeline?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To build no-code AI assistants"
+      },
+      {
+        "id": "B",
+        "text": "To validate prompts for Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "To monitor compliance of infrastructure configurations"
+      },
+      {
+        "id": "D",
+        "text": "To perform model hyperparameter tuning"
+      }
+    ],
+    "domain": "Domain 5: Security, Compliance, and Governance",
+    "correct_answer": "C",
+    "explanation": "AWS Config tracks configuration changes and compliance of AWS resources."
+  },
+  {
+    "question_number": 97,
+    "question": "Which type of bias occurs when the training dataset does not represent the target population?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Algorithmic bias"
+      },
+      {
+        "id": "B",
+        "text": "Data drift"
+      },
+      {
+        "id": "C",
+        "text": "Sampling bias"
+      },
+      {
+        "id": "D",
+        "text": "Tuning bias"
+      }
+    ],
+    "domain": "Domain 1: Fundamentals of AI and ML",
+    "correct_answer": "C",
+    "explanation": "Sampling bias arises when the training data does not represent the broader population."
+  },
+  {
+    "question_number": 98,
+    "question": "What is one limitation of few-shot prompting compared to fine-tuning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It requires GPU access"
+      },
+      {
+        "id": "B",
+        "text": "It needs a full labeled dataset"
+      },
+      {
+        "id": "C",
+        "text": "It has limited task-specific learning retention"
+      },
+      {
+        "id": "D",
+        "text": "It supports only classification models"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Few-shot prompting is flexible but doesn’t permanently adapt the model like fine-tuning."
+  },
+  {
+    "question_number": 99,
+    "question": "A company needs to host a multilingual question-answering chatbot using proprietary documentation. Which combination is best?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Translate + Amazon S3"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Kendra + Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Polly + AWS Lambda"
+      },
+      {
+        "id": "D",
+        "text": "AWS Glue + Amazon SageMaker"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "B",
+    "explanation": "Kendra retrieves relevant data, Bedrock generates grounded responses using that context."
+  },
+  {
+    "question_number": 100,
+    "question": "Which AWS service allows teams to detect and redact sensitive data from documents or text inputs before model training?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Comprehend"
+      }
+    ],
+    "domain": "Domain 2: Fundamentals of Generative AI",
+    "correct_answer": "C",
+    "explanation": "Macie scans for sensitive data (like PII) and helps with redaction and classification."
   }
 ]

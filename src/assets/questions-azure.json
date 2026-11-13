@@ -1,0 +1,652 @@
+[
+  {
+    "question_number": 1,
+    "question": "Which cloud characteristic means billing is based on actual usage?",
+    "options": [
+      { "id": "A", "text": "Broad network access" },
+      { "id": "B", "text": "Resource pooling" },
+      { "id": "C", "text": "Measured service" },
+      { "id": "D", "text": "Elasticity" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Cloud resources are metered, and billing is based on consumption."
+  },
+  {
+    "question_number": 2,
+    "question": "Which deployment model combines on-premises and Azure resources?",
+    "options": [
+      { "id": "A", "text": "Public Cloud" },
+      { "id": "B", "text": "Private Cloud" },
+      { "id": "C", "text": "Hybrid Cloud" },
+      { "id": "D", "text": "Community Cloud" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Hybrid blends on-premises infrastructure with Azure resources."
+  },
+  {
+    "question_number": 3,
+    "question": "In which service model does Azure manage the OS and runtime?",
+    "options": [
+      { "id": "A", "text": "IaaS" },
+      { "id": "B", "text": "PaaS" },
+      { "id": "C", "text": "SaaS" },
+      { "id": "D", "text": "DaaS" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "In PaaS, Azure manages OS and runtime; the customer focuses on the app and data."
+  },
+  {
+    "question_number": 4,
+    "question": "Moving from buying servers to pay-as-you-go billing best illustrates:",
+    "options": [
+      { "id": "A", "text": "Capital Expenditure (CapEx)" },
+      { "id": "B", "text": "Operational Expenditure (OpEx)" },
+      { "id": "C", "text": "Elasticity" },
+      { "id": "D", "text": "SLA" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "Pay-as-you-go billing is an OpEx model, unlike CapEx (hardware purchase)."
+  },
+  {
+    "question_number": 5,
+    "question": "In SaaS, who is responsible for data classification and access?",
+    "options": [
+      { "id": "A", "text": "Microsoft" },
+      { "id": "B", "text": "The customer" },
+      { "id": "C", "text": "A shared third party" },
+      { "id": "D", "text": "No one" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "Even in SaaS, customers own and classify their data."
+  },
+  {
+    "question_number": 6,
+    "question": "Best option to host a web app without managing OS patches:",
+    "options": [
+      { "id": "A", "text": "Virtual Machines" },
+      { "id": "B", "text": "App Service" },
+      { "id": "C", "text": "AKS" },
+      { "id": "D", "text": "Container Instances" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "App Service is a PaaS platform for hosting apps without managing OS updates."
+  },
+  {
+    "question_number": 7,
+    "question": "Private, dedicated connectivity with predictable latency to Azure:",
+    "options": [
+      { "id": "A", "text": "VPN Gateway" },
+      { "id": "B", "text": "ExpressRoute" },
+      { "id": "C", "text": "Traffic Manager" },
+      { "id": "D", "text": "Front Door" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "ExpressRoute offers private, dedicated connections with predictable latency."
+  },
+  {
+    "question_number": 8,
+    "question": "To survive a datacenter failure inside a region, deploy across:",
+    "options": [
+      { "id": "A", "text": "Availability Sets" },
+      { "id": "B", "text": "Resource Groups" },
+      { "id": "C", "text": "Availability Zones" },
+      { "id": "D", "text": "Region pairs" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "C",
+    "explanation": "AZs are independent datacenters within a region; they ensure resilience."
+  },
+  {
+    "question_number": 9,
+    "question": "Make a Storage account reachable via a private IP inside a VNet:",
+    "options": [
+      { "id": "A", "text": "Service Endpoint" },
+      { "id": "B", "text": "Private Endpoint" },
+      { "id": "C", "text": "NAT Gateway" },
+      { "id": "D", "text": "Public IP" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Maps a private IP in your VNet to the storage account for secure access."
+  },
+  {
+    "question_number": 10,
+    "question": "Run a single container quickly without managing servers or clusters:",
+    "options": [
+      { "id": "A", "text": "AKS" },
+      { "id": "B", "text": "App Service" },
+      { "id": "C", "text": "Container Instances" },
+      { "id": "D", "text": "VM Scale Sets" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "C",
+    "explanation": "Azure Container Instances run containers serverlessly, without clusters."
+  },
+  {
+    "question_number": 11,
+    "question": "Which service provides Layer 7 load balancing and a Web Application Firewall (WAF)?",
+    "options": [
+      { "id": "A", "text": "Load Balancer" },
+      { "id": "B", "text": "Application Gateway" },
+      { "id": "C", "text": "Traffic Manager" },
+      { "id": "D", "text": "Azure Front Door" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Application Gateway offers Layer 7 HTTP load balancing and WAF for app protection."
+  },
+  {
+    "question_number": 12,
+    "question": "Which option provides low-latency private connectivity between two VNets?",
+    "options": [
+      { "id": "A", "text": "VNet Peering" },
+      { "id": "B", "text": "VPN Gateway" },
+      { "id": "C", "text": "ExpressRoute" },
+      { "id": "D", "text": "NAT Gateway" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "A",
+    "explanation": "VNet Peering provides low-latency, high-bandwidth private connectivity between VNets."
+  },
+  {
+    "question_number": 13,
+    "question": "Which service hosts public DNS zones for domains in Azure?",
+    "options": [
+      { "id": "A", "text": "Private DNS" },
+      { "id": "B", "text": "Azure DNS" },
+      { "id": "C", "text": "DNS Forwarder" },
+      { "id": "D", "text": "Azure Firewall" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Azure DNS hosts and manages public DNS zones for your domains."
+  },
+  {
+    "question_number": 14,
+    "question": "Which Blob Storage tier is the cheapest option for rarely accessed data, with hours needed for retrieval?",
+    "options": [
+      { "id": "A", "text": "Hot" },
+      { "id": "B", "text": "Cool" },
+      { "id": "C", "text": "Archive" },
+      { "id": "D", "text": "Premium" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "C",
+    "explanation": "Archive tier is the cheapest storage, but retrieval takes hours."
+  },
+  {
+    "question_number": 15,
+    "question": "Which globally distributed NoSQL database supports multiple APIs?",
+    "options": [
+      { "id": "A", "text": "Azure SQL Database" },
+      { "id": "B", "text": "Azure Table Storage" },
+      { "id": "C", "text": "Cosmos DB" },
+      { "id": "D", "text": "SQL Managed Instance" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "C",
+    "explanation": "Cosmos DB is a globally distributed, multi-API NoSQL database."
+  },
+  {
+    "question_number": 16,
+    "question": "Which governance feature enforces rules like \"resources must be deployed in approved regions\"?",
+    "options": [
+      { "id": "A", "text": "Resource Locks" },
+      { "id": "B", "text": "Azure Policy" },
+      { "id": "C", "text": "Azure Monitor" },
+      { "id": "D", "text": "Azure Advisor" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Policies enforce compliance and restrict deployments to meet governance requirements."
+  },
+  {
+    "question_number": 17,
+    "question": "Which method prevents accidental deletion of critical Azure resources?",
+    "options": [
+      { "id": "A", "text": "ReadOnly lock" },
+      { "id": "B", "text": "CanNotDelete lock" },
+      { "id": "C", "text": "RBAC Reader role" },
+      { "id": "D", "text": "Conditional Access" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "CanNotDelete prevents deletion while still allowing read/write."
+  },
+  {
+    "question_number": 18,
+    "question": "Where can you find personalized alerts for outages or planned maintenance affecting your resources?",
+    "options": [
+      { "id": "A", "text": "Azure Status page" },
+      { "id": "B", "text": "Service Health" },
+      { "id": "C", "text": "Azure Monitor" },
+      { "id": "D", "text": "Microsoft Sentinel" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Service Health provides resource-specific outage and maintenance alerts."
+  },
+  {
+    "question_number": 19,
+    "question": "Which tool should you use to estimate future costs for planned Azure solutions?",
+    "options": [
+      { "id": "A", "text": "TCO Calculator" },
+      { "id": "B", "text": "Pricing Calculator" },
+      { "id": "C", "text": "Cost Analysis" },
+      { "id": "D", "text": "Budgets" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "The Pricing Calculator estimates future Azure spend before deployment."
+  },
+  {
+    "question_number": 20,
+    "question": "If you want to give a team permissions to only one resource group, which method should you use?",
+    "options": [
+      { "id": "A", "text": "Assign RBAC at subscription scope" },
+      { "id": "B", "text": "Assign RBAC at resource group scope" },
+      { "id": "C", "text": "Make them Owner at management group" },
+      { "id": "D", "text": "Create a new tenant" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Applying RBAC at the resource group level limits permissions only to that scope."
+  },
+  {
+    "question_number": 21,
+    "question": "Which of the following is an example of IaaS?",
+    "options": [
+      { "id": "A", "text": "Azure Virtual Machine" },
+      { "id": "B", "text": "App Service" },
+      { "id": "C", "text": "Microsoft 365" },
+      { "id": "D", "text": "Azure SQL Database" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "A",
+    "explanation": "VMs are IaaS, giving full OS control."
+  },
+  {
+    "question_number": 22,
+    "question": "Using Azure together with another cloud provider is known as:",
+    "options": [
+      { "id": "A", "text": "Hybrid Cloud" },
+      { "id": "B", "text": "Multi-cloud" },
+      { "id": "C", "text": "Private Cloud" },
+      { "id": "D", "text": "Community Cloud" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "Multi-cloud means using multiple providers at once."
+  },
+  {
+    "question_number": 23,
+    "question": "Elasticity primarily refers to:",
+    "options": [
+      { "id": "A", "text": "Scaling up only" },
+      { "id": "B", "text": "Scaling down only" },
+      { "id": "C", "text": "Automatically scaling resources with demand" },
+      { "id": "D", "text": "Ensuring compliance in different regions" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Elasticity refers to scaling out and in as workload changes."
+  },
+  {
+    "question_number": 24,
+    "question": "SLA stands for and represents:",
+    "options": [
+      { "id": "A", "text": "Secure Logon Agreement" },
+      { "id": "B", "text": "Service-Level Agreement — uptime commitment" },
+      { "id": "C", "text": "Software Licensing Agreement" },
+      { "id": "D", "text": "Storage-Level Arrangement" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "An SLA is a financial uptime guarantee from Microsoft."
+  },
+  {
+    "question_number": 25,
+    "question": "In IaaS, who is responsible for patching the guest operating system?",
+    "options": [
+      { "id": "A", "text": "Microsoft" },
+      { "id": "B", "text": "The customer" },
+      { "id": "C", "text": "No one" },
+      { "id": "D", "text": "The hardware vendor" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "In IaaS, Microsoft manages infrastructure, but customers patch the OS."
+  },
+  {
+    "question_number": 26,
+    "question": "Which storage redundancy option replicates data across availability zones in a region?",
+    "options": [
+      { "id": "A", "text": "LRS" },
+      { "id": "B", "text": "ZRS" },
+      { "id": "C", "text": "GRS" },
+      { "id": "D", "text": "RA-GRS" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Zone-Redundant Storage replicates across availability zones in one region."
+  },
+  {
+    "question_number": 27,
+    "question": "Best method to move 100 TB of data into Azure when internet is too slow:",
+    "options": [
+      { "id": "A", "text": "AzCopy over weekend" },
+      { "id": "B", "text": "Azure Data Box" },
+      { "id": "C", "text": "SFTP to VM" },
+      { "id": "D", "text": "Storage Explorer" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Data Box is a physical device for large-scale offline transfers."
+  },
+  {
+    "question_number": 28,
+    "question": "Which storage service provides SMB/NFS file shares mountable by Azure VMs and on-prem servers?",
+    "options": [
+      { "id": "A", "text": "Blob Storage" },
+      { "id": "B", "text": "Azure Files" },
+      { "id": "C", "text": "Queue Storage" },
+      { "id": "D", "text": "Table Storage" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Azure Files supports SMB and NFS shares, accessible from VMs and on-prem."
+  },
+  {
+    "question_number": 29,
+    "question": "Which compute option is best for orchestrating many microservices with rolling updates?",
+    "options": [
+      { "id": "A", "text": "Azure Container Instances" },
+      { "id": "B", "text": "Azure Kubernetes Service (AKS)" },
+      { "id": "C", "text": "App Service" },
+      { "id": "D", "text": "VM Scale Sets" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "AKS manages container orchestration and rolling updates."
+  },
+  {
+    "question_number": 30,
+    "question": "Which service uses DNS-based global routing for apps across multiple regions?",
+    "options": [
+      { "id": "A", "text": "Azure Front Door" },
+      { "id": "B", "text": "Traffic Manager" },
+      { "id": "C", "text": "Load Balancer" },
+      { "id": "D", "text": "Application Gateway" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Traffic Manager routes traffic globally using DNS resolution methods."
+  },
+  {
+    "question_number": 31,
+    "question": "How can you organize multiple subscriptions into a hierarchy for applying policies and RBAC?",
+    "options": [
+      { "id": "A", "text": "Resource Groups" },
+      { "id": "B", "text": "Management Groups" },
+      { "id": "C", "text": "Tenants" },
+      { "id": "D", "text": "Blueprints" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Management Groups allow grouping of multiple subscriptions for unified RBAC and policy assignment."
+  },
+  {
+    "question_number": 32,
+    "question": "Which service lets you package templates, RBAC roles, and policies together for repeatable deployments?",
+    "options": [
+      { "id": "A", "text": "Azure Policy" },
+      { "id": "B", "text": "Azure Blueprints" },
+      { "id": "C", "text": "Azure Advisor" },
+      { "id": "D", "text": "Resource Locks" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Blueprints combine templates, policies, and RBAC roles for consistent deployments."
+  },
+  {
+    "question_number": 33,
+    "question": "Which tool helps track and analyze past Azure spending?",
+    "options": [
+      { "id": "A", "text": "Budgets" },
+      { "id": "B", "text": "Cost Analysis" },
+      { "id": "C", "text": "Pricing Calculator" },
+      { "id": "D", "text": "TCO Calculator" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Cost Analysis shows historical spending patterns in Azure."
+  },
+  {
+    "question_number": 34,
+    "question": "Which tool provides a browser-based shell with Azure CLI and PowerShell preinstalled?",
+    "options": [
+      { "id": "A", "text": "Azure Portal" },
+      { "id": "B", "text": "Cloud Shell" },
+      { "id": "C", "text": "SSH to VM" },
+      { "id": "D", "text": "DevOps Agent" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Cloud Shell is a browser-based shell with CLI and PowerShell preloaded."
+  },
+  {
+    "question_number": 35,
+    "question": "Which service provides a central log store and supports queries with KQL?",
+    "options": [
+      { "id": "A", "text": "Application Insights" },
+      { "id": "B", "text": "Log Analytics Workspace" },
+      { "id": "C", "text": "Service Health" },
+      { "id": "D", "text": "Azure Status" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Central log repository with query capabilities using KQL."
+  },
+  {
+    "question_number": 36,
+    "question": "Which service is used to securely store and manage secrets, keys, and certificates?",
+    "options": [
+      { "id": "A", "text": "Key Vault" },
+      { "id": "B", "text": "Defender for Cloud" },
+      { "id": "C", "text": "Microsoft Sentinel" },
+      { "id": "D", "text": "Azure AD" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "A",
+    "explanation": "Key Vault is the secure storage for secrets, encryption keys, and certificates."
+  },
+  {
+    "question_number": 37,
+    "question": "Which identity feature allows an app to connect to Azure resources without storing credentials?",
+    "options": [
+      { "id": "A", "text": "External ID" },
+      { "id": "B", "text": "Managed Identity" },
+      { "id": "C", "text": "Shared Key" },
+      { "id": "D", "text": "Service Principal only" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "Managed Identities allow apps to access services without managing secrets."
+  },
+  {
+    "question_number": 38,
+    "question": "Which service provides continuous security assessments and recommendations with a secure score?",
+    "options": [
+      { "id": "A", "text": "Azure Monitor" },
+      { "id": "B", "text": "Microsoft Sentinel" },
+      { "id": "C", "text": "Defender for Cloud" },
+      { "id": "D", "text": "Azure Advisor" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "C",
+    "explanation": "Defender for Cloud provides secure score, posture management, and recommendations."
+  },
+  {
+    "question_number": 39,
+    "question": "Which service lets you manage on-premises servers and Kubernetes clusters as if they were Azure resources?",
+    "options": [
+      { "id": "A", "text": "Azure Arc" },
+      { "id": "B", "text": "Azure Migrate" },
+      { "id": "C", "text": "ExpressRoute" },
+      { "id": "D", "text": "Site-to-Site VPN" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "A",
+    "explanation": "Arc extends Azure management to non-Azure environments like on-premises servers."
+  },
+  {
+    "question_number": 40,
+    "question": "Which tool compares the 3-year cost of running workloads on-premises vs in Azure?",
+    "options": [
+      { "id": "A", "text": "Pricing Calculator" },
+      { "id": "B", "text": "TCO Calculator" },
+      { "id": "C", "text": "Cost Analysis" },
+      { "id": "D", "text": "Budgets" }
+    ],
+    "domain": "Domain 3: Azure Management and Governance",
+    "correct_answer": "B",
+    "explanation": "The Total Cost of Ownership calculator estimates on-prem vs cloud costs over time."
+  },
+  {
+    "question_number": 41,
+    "question": "Which NIST characteristic describes the ability to provision resources without human intervention?",
+    "options": [
+      { "id": "A", "text": "On-demand self-service" },
+      { "id": "B", "text": "Broad network access" },
+      { "id": "C", "text": "Resource pooling" },
+      { "id": "D", "text": "Measured service" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "A",
+    "explanation": "On-demand self-service allows users to provision cloud resources automatically without provider interaction."
+  },
+  {
+    "question_number": 42,
+    "question": "Public cloud is best described as:",
+    "options": [
+      { "id": "A", "text": "Dedicated hardware for a single organization" },
+      { "id": "B", "text": "Shared infrastructure managed by a provider, accessed over the internet" },
+      { "id": "C", "text": "Running workloads across multiple providers" },
+      { "id": "D", "text": "An on-premises private datacenter" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "Public cloud is hosted by the provider and shared among multiple tenants, accessible via the internet."
+  },
+  {
+    "question_number": 43,
+    "question": "Which of the following is a SaaS solution?",
+    "options": [
+      { "id": "A", "text": "Azure SQL Database" },
+      { "id": "B", "text": "Azure Virtual Machines" },
+      { "id": "C", "text": "Microsoft 365" },
+      { "id": "D", "text": "Azure App Service" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Microsoft 365 is SaaS — the provider manages everything except data usage and access."
+  },
+  {
+    "question_number": 44,
+    "question": "What does Zero Trust mean?",
+    "options": [
+      { "id": "A", "text": "Trust all devices on the corporate network" },
+      { "id": "B", "text": "Trust but verify" },
+      { "id": "C", "text": "Never trust, always verify" },
+      { "id": "D", "text": "MFA is optional" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "C",
+    "explanation": "Zero Trust assumes no device or user is inherently trusted; verification is always required."
+  },
+  {
+    "question_number": 45,
+    "question": "Placing resources in Azure regions closest to end users primarily improves:",
+    "options": [
+      { "id": "A", "text": "High availability" },
+      { "id": "B", "text": "Global reach and lower latency" },
+      { "id": "C", "text": "Cost efficiency" },
+      { "id": "D", "text": "Governance" }
+    ],
+    "domain": "Domain 1: Cloud Concepts",
+    "correct_answer": "B",
+    "explanation": "Deploying resources close to users reduces latency and improves global availability."
+  },
+  {
+    "question_number": 46,
+    "question": "Azure Front Door is primarily used for:",
+    "options": [
+      { "id": "A", "text": "DNS-level global routing" },
+      { "id": "B", "text": "Global HTTP acceleration and edge routing with WAF" },
+      { "id": "C", "text": "Site-to-site private connectivity" },
+      { "id": "D", "text": "L4 TCP distribution inside a VNet" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Azure Front Door accelerates HTTP traffic globally and includes WAF for security."
+  },
+  {
+    "question_number": 47,
+    "question": "Which Azure service is best for building simple APIs that scale and are billed per execution?",
+    "options": [
+      { "id": "A", "text": "App Service" },
+      { "id": "B", "text": "Azure Functions" },
+      { "id": "C", "text": "AKS" },
+      { "id": "D", "text": "Container Instances" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Functions are serverless and billed only when triggered, ideal for lightweight APIs."
+  },
+  {
+    "question_number": 48,
+    "question": "Which service provides secure RDP/SSH access to VMs without exposing public IPs?",
+    "options": [
+      { "id": "A", "text": "Azure Bastion" },
+      { "id": "B", "text": "NAT Gateway" },
+      { "id": "C", "text": "Jumpbox VM with public IP" },
+      { "id": "D", "text": "NSG inbound rule" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "A",
+    "explanation": "Bastion provides secure RDP/SSH sessions through the portal without public IPs."
+  },
+  {
+    "question_number": 49,
+    "question": "Which compute option offers the lowest cost for workloads that can be interrupted at any time?",
+    "options": [
+      { "id": "A", "text": "Reserved VM" },
+      { "id": "B", "text": "Spot VM" },
+      { "id": "C", "text": "Pay-as-you-go VM" },
+      { "id": "D", "text": "Dedicated Host" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "Spot VMs are low-cost but can be evicted at any time, ideal for interruptible workloads."
+  },
+  {
+    "question_number": 50,
+    "question": "Which tool enables high-speed command-line transfers to and from Azure Storage?",
+    "options": [
+      { "id": "A", "text": "Storage Explorer" },
+      { "id": "B", "text": "AzCopy" },
+      { "id": "C", "text": "Portal upload" },
+      { "id": "D", "text": "Power BI" }
+    ],
+    "domain": "Domain 2: Azure Architecture and Services",
+    "correct_answer": "B",
+    "explanation": "AzCopy is a command-line utility optimized for fast data transfers to and from Azure Storage."
+  }
+]
