@@ -43,10 +43,11 @@ export class QuizPage implements OnInit {
   question: Question | null = null;
   currentIndex = 0;
   totalQuestions = 0;
-  selectedOption: string | null = null;
+  selectedOptions: string[] = [];
   isAnswered = false;
   isCorrect = false;
   explanation = '';
+  correctAnswerIds: string[] = [];
   showResults = false;
   results: QuizResults | null = null;
   loading = true;
@@ -58,6 +59,8 @@ export class QuizPage implements OnInit {
   ngOnInit() {
     this.quizService.loadQuestions().subscribe({
       next: (questions) => {
+        // Filtro temporal para pruebas: solo cargar preguntas con respuesta multiple
+        // this.quizService.init(questions.filter((q) => this.quizService.isMultipleAnswer(q)));
         this.quizService.init(questions);
         this.startQuiz();
         this.loading = false;
@@ -78,20 +81,45 @@ export class QuizPage implements OnInit {
   private loadQuestion() {
     this.question = this.quizService.getCurrentQuestion();
     this.currentIndex = this.quizService.getCurrentIndex();
-    this.selectedOption = null;
+    this.selectedOptions = [];
     this.isAnswered = false;
     this.isCorrect = false;
     this.explanation = '';
+    this.correctAnswerIds = this.question ? this.quizService.getCorrectAnswerIds(this.question) : [];
   }
 
   selectOption(optionId: string) {
+    const question = this.question;
+    if (!question) return;
+
+    if (this.quizService.isMultipleAnswer(question)) {
+      this.selectedOptions = this.selectedOptions.includes(optionId)
+        ? this.selectedOptions.filter((id) => id !== optionId)
+        : [...this.selectedOptions, optionId];
+
+      const requiredAnswers = this.quizService.getCorrectAnswerIds(question).length;
+      const isReady = this.selectedOptions.length >= requiredAnswers;
+
+      if (isReady) {
+        const result = this.quizService.selectAnswer(question.question_number, this.selectedOptions);
+        this.isAnswered = true;
+        this.isCorrect = result.correct;
+        this.explanation = result.explanation;
+      } else {
+        this.isAnswered = false;
+        this.isCorrect = false;
+        this.explanation = '';
+      }
+      return;
+    }
+
     if (this.isAnswered) return;
 
-    this.selectedOption = optionId;
-    const result = this.quizService.selectAnswer(optionId);
+    this.selectedOptions = [optionId];
+    const result = this.quizService.selectAnswer(question.question_number, [optionId]);
+    this.isAnswered = true;
     this.isCorrect = result.correct;
     this.explanation = result.explanation;
-    this.isAnswered = true;
   }
 
   next() {

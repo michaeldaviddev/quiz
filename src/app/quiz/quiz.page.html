@@ -94,21 +94,21 @@
         <ion-card
           *ngFor="let option of question.options"
           class="option-card"
-          [class.selected]="selectedOption === option.id"
-          [class.correct-answer]="isAnswered && option.id === question.correct_answer"
-          [class.wrong-answer]="isAnswered && selectedOption === option.id && !isCorrect"
+          [class.selected]="selectedOptions.includes(option.id)"
+          [class.correct-answer]="isAnswered && correctAnswerIds.includes(option.id)"
+          [class.wrong-answer]="isAnswered && selectedOptions.includes(option.id) && !isCorrect"
           (click)="selectOption(option.id)"
         >
           <ion-card-content>
             <span class="option-id">{{ option.id }}</span>
             <span class="option-text">{{ option.text }}</span>
             <ion-icon
-              *ngIf="isAnswered && option.id === question.correct_answer"
+              *ngIf="isAnswered && correctAnswerIds.includes(option.id)"
               name="checkmark-circle"
               class="result-icon correct-icon"
             ></ion-icon>
             <ion-icon
-              *ngIf="isAnswered && selectedOption === option.id && !isCorrect"
+              *ngIf="isAnswered && selectedOptions.includes(option.id) && !isCorrect"
               name="close-circle"
               class="result-icon wrong-icon"
             ></ion-icon>

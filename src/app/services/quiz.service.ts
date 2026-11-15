@@ -9,7 +9,7 @@ export class QuizService {
   private allQuestions: Question[] = [];
   private shuffledQuestions: Question[] = [];
   private currentIndex = 0;
-  private answers = new Map<number, string>();
+  private answers = new Map<number, string[]>();
 
   loaded = false;
 
@@ -49,13 +49,35 @@ export class QuizService {
     return this.shuffledQuestions.length;
   }
 
-  selectAnswer(optionId: string): { correct: boolean; explanation: string } {
-    const question = this.getCurrentQuestion();
+  getCorrectAnswerIds(question: Question): string[] {
+    return question.correct_answer
+      .split(',')
+      .map((id) => id.trim().toUpperCase())
+      .filter((id) => id.length > 0);
+  }
+
+  isMultipleAnswer(question: Question): boolean {
+    return this.getCorrectAnswerIds(question).length > 1;
+  }
+
+  selectAnswer(
+    questionNumber: number,
+    selectedIds: string[]
+  ): { correct: boolean; explanation: string } {
+    const question = this.shuffledQuestions.find((q) => q.question_number === questionNumber);
     if (!question) return { correct: false, explanation: '' };
 
-    this.answers.set(question.question_number, optionId);
-    const correct = optionId === question.correct_answer;
-    return { correct, explanation: question.explanation };
+    const isCorrect = this.isCorrectAnswer(question, selectedIds);
+    this.answers.set(questionNumber, selectedIds);
+    return { correct: isCorrect, explanation: question.explanation };
+  }
+
+  private isCorrectAnswer(question: Question, selectedIds: string[]): boolean {
+    const selectedSet = Array.from(new Set(selectedIds)).sort();
+    const correctSet = Array.from(new Set(this.getCorrectAnswerIds(question))).sort();
+    return (
+      selectedSet.length === correctSet.length && selectedSet.every((id) => correctSet.includes(id))
+    );
   }
 
   hasAnswered(questionNumber: number): boolean {
@@ -66,7 +88,7 @@ export class QuizService {
     return this.answers.size > 0;
   }
 
-  getSelectedAnswer(questionNumber: number): string | undefined {
+  getSelectedAnswer(questionNumber: number): string[] | undefined {
     return this.answers.get(questionNumber);
   }
 
@@ -81,7 +103,7 @@ export class QuizService {
 
     for (const question of this.shuffledQuestions) {
       const selected = this.answers.get(question.question_number);
-      const isCorrect = selected === question.correct_answer;
+      const isCorrect = selected !== undefined && this.isCorrectAnswer(question, selected);
 
       if (isCorrect) correct++;
 
