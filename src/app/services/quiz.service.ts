@@ -62,6 +62,10 @@ export class QuizService {
     return this.answers.has(questionNumber);
   }
 
+  hasProgress(): boolean {
+    return this.answers.size > 0;
+  }
+
   getSelectedAnswer(questionNumber: number): string | undefined {
     return this.answers.get(questionNumber);
   }

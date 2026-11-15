@@ -122,6 +122,7 @@
           <span>{{ isCorrect ? 'Correcto' : 'Incorrecto' }}</span>
         </div>
         <p class="explanation">{{ explanation }}</p>
+        <span class="question-number">Pregunta {{ question.question_number }}</span>
         <ion-button expand="block" (click)="next()">
           {{ currentIndex + 1 < totalQuestions ? 'Siguiente' : 'Ver resultados' }}
         </ion-button>

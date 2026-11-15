@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { QuizExitGuard } from './guards/quiz-exit.guard';
 
 export const routes: Routes = [
   {
@@ -8,6 +9,7 @@ export const routes: Routes = [
   {
     path: 'quiz',
     loadComponent: () => import('./quiz/quiz.page').then((m) => m.QuizPage),
+    canDeactivate: [QuizExitGuard],
   },
   {
     path: '',
